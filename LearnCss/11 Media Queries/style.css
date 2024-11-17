@@ -1,0 +1,51 @@
+body{
+    background-color: red;
+}
+
+/* @media (width <= 500px) {
+    body{
+        background-color: green;
+    }
+} */
+
+/* @media (max-width:500px) {
+    body{
+        background-color: green;
+    }
+} */
+/* 
+@media (orientation: portrait) {
+    body{
+        background-color: green;
+    }
+} */
+/* 
+@media (min-width:400px) and (max-width:700px) {
+    body{
+        background-color: green;
+    }
+} */
+
+@media (400px <= width <= 700px) {
+    body{
+        background-color: green;
+    }
+}
+
+/* @media (min-width:400px) {
+    body{
+        background-color: green;
+    }
+}
+
+@media (min-width:550px) {
+    body{
+        background-color: gold;
+    }
+}
+
+@media (min-width:750px) {
+    body{
+        background-color: black;
+    }
+} */
