@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+</head>
+<body>
+
+    <div class="container" id="myContainer">
+        <h1 id="heading">Learning DOM manipulation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eaque!</p>
+    </div>
+
+
+    <script src="dom.js"></script>
+    <script>
+        const myContainer = document.querySelector("#myContainer");
+        const divElement = document.createElement("div"); 
+        divElement.textContent = "I am div"; 
+        myContainer.appendChild(divElement); 
+    </script>
+</body>
+</html>
