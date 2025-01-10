@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRICKET GAME</title>
+  <link rel="stylesheet" href="cricket.css" />
+</head>
+
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+    // this will generate random number between 0 and 3
+    let computerChoice = generateComputerChoice(); 
+    let Result = getResult('Bat',computerChoice); 
+    showResult('Bat',computerChoice, Result);
+    ">Bat</button>
+
+  <!--For the Ball selection of the user  -->
+  <button onclick="
+    computerChoice =generateComputerChoice(); 
+    Result = getResult('Ball',computerChoice);
+    showResult('Ball',computerChoice, Result);     
+    "> Ball</button>
+
+  <button onclick="
+    computerChoice = generateComputerChoice(); 
+    Result = getResult('Stump',computerChoice); 
+    showResult('Stump',computerChoice, Result); 
+    ">Stump</button>
+
+
+    <script src=" cricket.js"></script>
+</body>
+
+</html>
