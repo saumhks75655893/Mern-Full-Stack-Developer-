@@ -13,29 +13,92 @@
   <div class="whole-body">
     <div class="cal-body">
       <div class="dis-body">
-
+        <div class="display">
+          <input type="text" id="display">
+        </div>
       </div>
       <div class="button-body">
-        <button class="btn-body">CL</button>
-        <button class="btn-body">DEL</button>
-        <button class="btn-body">%</button>
-        <button class="btn-body">/</button>
-        <button class="btn-body">7</button>
-        <button class="btn-body">8</button>
-        <button class="btn-body">9</button>
-        <button class="btn-body">*</button>
-        <button class="btn-body">4</button>
-        <button class="btn-body">5</button>
-        <button class="btn-body">6</button>
-        <button class="btn-body">-</button>
-        <button class="btn-body">1</button>
-        <button class="btn-body">2</button>
-        <button class="btn-body">3</button>
-        <button class="btn-body">+</button>
-        <button class="btn-body">.</button>
-        <button class="btn-body">0</button>
-        <button class="btn-body">00</button>
-        <button class="btn-body">=</button>
+        <button class="btn-body" onclick="
+        currentDisplay.pop();
+        document.querySelector('.dis-body').innerText = currentDisplay;">CL</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay = '';
+        document.querySelector('.dis-body').innerText = currentDisplay;">DEL</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '%';
+        document.querySelector('.dis-body').innerText = currentDisplay;">%</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '/';
+        document.querySelector('.dis-body').innerText = currentDisplay;">/</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '7';
+        document.querySelector('.dis-body').innerText = currentDisplay;">7</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '8';
+        document.querySelector('.dis-body').innerText = currentDisplay;">8</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '9';
+        document.querySelector('.dis-body').innerText = currentDisplay;">9</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '*';
+        document.querySelector('.dis-body').innerText = currentDisplay;">*</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '4';
+        document.querySelector('.dis-body').innerText = currentDisplay;">4</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '5';
+        document.querySelector('.dis-body').innerText = currentDisplay;">5</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '6';
+        document.querySelector('.dis-body').innerText = currentDisplay;">6</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '-';
+        document.querySelector('.dis-body').innerText = currentDisplay;">-</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '1';
+        document.querySelector('.dis-body').innerText = currentDisplay;">1</button>
+        
+        <button class=" btn-body" onclick="
+        currentDisplay += '2';
+        document.querySelector('.dis-body').innerText = currentDisplay;">2</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '3';
+        document.querySelector('.dis-body').innerText = currentDisplay;">3</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '+';
+        document.querySelector('.dis-body').innerText = currentDisplay;">+</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '.';
+        document.querySelector('.dis-body').innerText = currentDisplay;">.</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '0';
+        document.querySelector('.dis-body').innerText = currentDisplay;">0</button>
+
+        <button class="btn-body" onclick="
+        currentDisplay += '00';
+        document.querySelector('.dis-body').innerText = currentDisplay;">00</button>
+
+        <button class="btn-body" onclick="
+        let result = eval(currentDisplay); 
+        currentDisplay = result;
+        document.querySelector('.dis-body').innerText = currentDisplay;">=</button>
+
       </div>
     </div>
   </div>
