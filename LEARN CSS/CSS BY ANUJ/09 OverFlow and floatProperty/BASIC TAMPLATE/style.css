@@ -6,8 +6,8 @@
 
 nav {
     width: 100%;
-    height: 12vh;
-    background-color:blue ;
+    height: 10vh;
+    background-color:rgb(13, 133, 184) ;
     position: fixed;
     top: 0;
     z-index: 1; 
@@ -16,21 +16,37 @@ nav {
 body{
     font-family: serif;
     line-height: 1.2rem;
+    text-align: center;
 }
 
+h1{
+    text-align: center;
+}
+hr{
+    position: relative;
+    left: 25%;
+    width:50%;
+    height:5px;
+    background-color: black;
+}
 main {
-    width: 50%;
-    height: 250vh;
+    width: 65%;
+    height: 500vh;
     border: 2px solid black;
     position:relative;
-    left: 20%;
-    right: 30%;
-    padding: 110px 50px;
+    top: 100px;
+    left: 8%;
+    /* right: 30%; */
+    padding: 50px 50px;
+}
+
+p{
+    text-align: justify;
 }
 
 .aside-container {
     width: 100%;
-    height: 150vh;
+    height: 200vh;
     position: absolute;
     top: 0;
 }
@@ -38,10 +54,12 @@ main {
 aside{
     width: 300px;
     background-color: pink;
-    height: 80vh;
+    height: 100vh;
     position: sticky;
     top: 15%;
     float: right;
+    text-align: justify;
+    padding: 20px;
 }
 
 .contact{
@@ -57,6 +75,6 @@ aside{
 
 footer{
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: black;
 }
