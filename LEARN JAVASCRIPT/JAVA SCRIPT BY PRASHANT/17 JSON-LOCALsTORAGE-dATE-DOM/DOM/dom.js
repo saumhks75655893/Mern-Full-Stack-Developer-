@@ -22,10 +22,11 @@ console.log(document.querySelector('button').classList.add('your-button'));
 console.log(document.querySelector('button').classList.remove('your-button')); 
 let button = document.createElement('Button'); 
 button.innerHTML = 'Click me'; 
-let para = document.createElement('p'); 
-para.innerHTML = 'Hi, I am Himanshu kumar!'; 
-document.querySelector('#div1').appendChild(button); 
+let IframeModal = document.createElement('iframe'); 
+IframeModal.innerHTML = '/JSON/json.html'; 
+// document.querySelector('#div1').appendChild(button); 
+document.querySelector('#div1').appendChild(IframeModal); 
 // document.querySelector('#div1').removeChild(button); 
-document.querySelector('#div1').replaceChild(button,para); 
+document.querySelector('#div1').replaceChild(button,IframeModal); 
 
 
