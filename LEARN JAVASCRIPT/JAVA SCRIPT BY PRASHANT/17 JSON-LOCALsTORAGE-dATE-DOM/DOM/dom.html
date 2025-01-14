@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - DOCUMENT OBJECT MODEL </title>
+</head>
+
+<body>
+  <h1 class="heading">DOM - DOCUMENT OBJECT MODEL </h1>
+
+  <div class="value1" id='div1'>
+    <input type="text" width="50%" class="name">
+  </div>
+  <input type="text" width="50%" class="name1">
+
+  <button class="myButton resetButton submitButton" onclick="
+  let value1 = document.querySelector('.name1').value; 
+  console.log(value1); 
+  ">Button</button>
+  <script src="dom.js"></script>
+</body>
+
+</html>
