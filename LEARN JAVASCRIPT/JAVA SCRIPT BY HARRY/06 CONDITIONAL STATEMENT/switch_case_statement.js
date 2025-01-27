@@ -46,3 +46,10 @@ switch (a) {
     console.log('NO value matches to the expression');
     
 }
+
+
+// Turnery Operator
+
+let c = 5; 
+let b = 4; 
+c > b ? console.log('yes') : console.log('NO'); 
