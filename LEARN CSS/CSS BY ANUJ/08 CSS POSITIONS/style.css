@@ -4,29 +4,30 @@
 }
 
 body {
-    height: 500vh;
+    height: 200vh;
 }
 
 .container {
     width: 60vw;
-    height: 400vh;
+    height: 100vh;
     background-color: aliceblue;
-    margin: 10% 25%;
+    margin: 0 20%;
     /* margin-left: 700px; */
     /* position: relative; */
 }
 
 .box {
     width: 10vw;
-    height: 20vh;
+    height: 10vh;
     position: relative;
 }
 
 .red {
     background-color: red;
     position: relative;
-    top: 20vh;
-    left: 10vw;
+    top: 70vh;
+    left: 40.3vw;
+    z-index: 10;
 
 }
 

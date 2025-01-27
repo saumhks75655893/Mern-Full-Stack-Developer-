@@ -24,6 +24,8 @@ localStorage.setItem('product', JSON.stringify(product));
 
 let product1 = JSON.parse(localStorage.getItem('product')); 
 console.log(product1);
+console.log(product1.rating);
+
 
 
 localStorage.clear()
