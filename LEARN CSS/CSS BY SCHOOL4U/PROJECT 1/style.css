@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c4e0e5;
+}
+
+.main-page{
+max-width: 95vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1e2b;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .logo img{
+  width:60px;
+  height: 30px;
+  object-fit: cover;
+  filter: invert(1);
+}
+
+/* Middle section */
+.nav-middle {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-middle a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-middle a:hover {
+  text-decoration: underline;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .icon {
+  cursor: pointer;
+}
+
+/* landing page */
+
+.landing-page {
+  display: flex;
+  height: 60vh;
+  padding: 0px 30px;
+}
+
+/* Left Section */
+.landing-page .left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.landing-page .left-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.landing-page .left-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.landing-page .explore-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.landing-page .explore-btn:hover {
+  background-color: #005dc1;
+}
+
+/* Right Section */
+.landing-page .right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page .right-section img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* about us page */
+
+.about-page {
+  display: flex;
+  height: 70vh;
+  /* padding: 40px; */
+}
+
+/* Left Image Section */
+.about-page .left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page .left-section img {
+  max-width: 100%;
+  width: 95%;
+}
+
+/* Right Text Section */
+.about-page .right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.about-page .right-section h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  line-height: 1.3rem;
+}
+
+.about-page .right-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.about-page .about-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about-page .about-btn:hover {
+  background-color: #005bbb;
+}
+
+/* contact us page */
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  padding: 5px;
+}
+
+.contact-page .form-container {
+  background: white;
+  padding: 40px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-page .form-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-page input, .contact-page textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.contact-page input:focus, .contact-page  textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-page button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.contact-page button:hover {
+  background-color: #005bbb;
+}
+
+.contact-page .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-page .social-icons i {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.contact-page .social-icons i:hover {
+  color: #007bff;
+}
+
+
+/* footer */
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color:white;
+  gap: 20px;
+  background-color: #031d3a;
+  padding: 40px 60px;
+  color: #007bff;
+}
+
+.footer .footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer .footer-col .logo img{
+  object-fit: cover;
+  width: 80px;
+  filter:invert(1); 
+}
+
+.footer .footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer .footer-col p {
+  margin-bottom: 15px;
+  color:white;
+  line-height: 1.4;
+}
+
+.footer .footer-col ul {
+  list-style: none;
+}
+
+.footer .footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer .footer-col ul li a:hover {
+  color: #007bff;
+}
+
+.footer .explore-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer .explore-btn:hover {
+  background-color: #005bbb;
+}
+
+.footer .update-box {
+  background-color: #d5e2ef;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.footer .update-box a {
+  text-decoration: none;
+  color: rgb(180, 182, 186);
+  font-size: 0.95rem;
+  display: block;
+}
+
+.footer .update-box a:hover {
+  color: #007bff;
+}
