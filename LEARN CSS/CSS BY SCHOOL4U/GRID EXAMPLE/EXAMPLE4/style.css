@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.grid_container {
+  width: 96vw;
+  height: 95vh;
+  margin: 20px;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  /* align-items: center;
+  justify-items: center; */
+}
+
+.box {
+  /* width: 100px;
+  height: 100px; */
+  background-color: #dcdc21;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display:grid;
+  place-items: center;
+  border: transparent 0px solid;
+  font-size: 30px;
+  color: #fff;
+  /* font-weight: bold; */
+}
+
+.item1 {
+  grid-area: 1/1/6/5;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: indigo;
+}
+
+.item2 {
+  grid-area: 1/5/9/7;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.item3 {
+  grid-area: 1/7/3/9;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.item4 {
+  grid-area: 1/9/3/13;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.item5 {
+  grid-area: 6/1/10/3;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.item6 {
+  grid-area: 6/3/7/5;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.item7 {
+  grid-area: 7/3/10/5;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: rgb(168, 37, 37);
+}
+
+.item8 {
+  grid-area: 3/7/9/9;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: rgb(168, 37, 37);
+}
+
+.item9 {
+  grid-area: 3/9/5/10;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.item10 {
+  grid-area: 3/10/5/13;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: rgb(168, 37, 37);
+}
+
+.item11 {
+  grid-area: 10/1/13/5;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.item12 {
+  grid-area: 9/5/13/9;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: indigo;
+}
+
+.item13 {
+  grid-area: 5/9/11/13;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: indigo;
+}
+
+.item14 {
+  grid-area: 11/9/13/13;
+  border: transparent 0px solid;
+  border-radius: 10px;
+  background-color: skyblue;
+}
