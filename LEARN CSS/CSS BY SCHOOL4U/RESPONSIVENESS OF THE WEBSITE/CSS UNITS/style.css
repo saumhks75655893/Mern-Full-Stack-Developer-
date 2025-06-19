@@ -1,0 +1,81 @@
+html {
+  font-size: 16px; /* Base font size */
+}
+
+
+.text1 {
+  font-size: 2.54cm;
+  /* 1 inch = 2.54 centimeters */
+}
+
+.text2 {
+  font-size: 25.4mm;
+  /* 1 inch = 25.4 millimeters */
+}
+
+.text3 {
+  font-size: 1in;
+}
+
+.text4 {
+  font-size: 96px;
+  /* 1 inch = 96 pixels (standard web resolution). */
+}
+
+.text5 {
+  font-size: 72pt;
+  /* 1 inch = 72 points */
+}
+
+.text6 {
+  font-size: 6pc;
+  /* 1 inch = 6 picas */
+}
+
+.text7 {
+  font-size: 50%;
+  /* 50% of the parent element's font size */
+  /* If the parent element's font size is 16px, this will be 8px */
+}
+.text8 {
+  font-size: 2em;
+  /* 1 em = current font size, typically 16px */
+  /* If the parent element's font size is 16px, this will be 32px */
+}
+
+.text9 {
+  font-size: 2rem;
+  /* 1 rem = root element font size, typically 16px */
+  /* If the root element's font size is 16px, this will be 16px */
+}
+
+.text10 {
+  font-size: 2vw;
+  /* 1vw = 1% of the viewport width */
+  /* If the viewport width is 1000px, this will be 10px */
+}
+
+.text11 {
+  font-size: 2vh;
+  /* 1vh = 1% of the viewport height */
+  /* If the viewport height is 1000px, this will be 10px */
+}
+
+.text12 {
+  font-size: 2vmin;
+  /* 1vmin = 1% of the smaller dimension of the viewport */
+  /* If the viewport is 1000px wide and 800px tall, this will be 8px */
+}
+
+.text13 {
+  font-size: 2vmax;
+  /* 1vmax = 1% of the larger dimension of the viewport */
+  /* If the viewport is 1000px wide and 800px tall, this will be 10px */
+}
+
+.text14 {
+  font-size: 2ex;
+  /* 1ex = the height of the letter 'x' in the current font */
+  /* This can vary based on the font used */
+}
+
