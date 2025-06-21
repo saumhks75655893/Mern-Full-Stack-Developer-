@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #dcdcdc;
+  box-shadow: 4px 0px 10px 2px rgb(145, 43, 218);
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2rem;
+  max-width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+header .navbar .links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header .navbar .links h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #0197EE;
+}
+
+
+header .navbar .links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.637);
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header .navbar .btns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+}
+
+header .navbar .btns a {
+  text-decoration: none;
+}
+
+header .navbar .btns button {
+  color: white;
+  background-color: #0197EE;
+  border: none;
+  padding: 0px 25px;
+  border-radius: 10px;
+  height: 80%;
+}
+
+@media (max-width:924px){
+  header .navbar .links a{
+    display: none;
+  }
+}
+
+/* main visibility */
+
+.visibility {
+  max-width: 45%;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.visibility h2 {
+  margin-bottom: 1rem;
+}
+
+.visibility h2>span {
+  color: #0197EE;
+}
+
+.visibility p {
+  width: 85%;
+  color: rgba(0, 0, 0, 0.656);
+  margin: auto;
+}
+
+@media (max-width:924px){
+  .visibility {
+    max-width: 60%;
+  }
+  .visibility h2{
+    font-size: 1.3rem;
+  }
+  .visibility p{
+    font-size: 0.9rem;
+  }
+}
+/* truckload */
+
+.truckload {
+  width: 100%;
+  height: 100%;
+}
+
+.truckload .wrapper {
+  height: 100%;
+  max-width: 85%;
+  margin: auto;
+  background-color: #F0F0F0;
+  padding: 22px;
+  border-radius: 10px;
+}
+
+/* chhotu navbar */
+.truckload .wrapper .chhotu-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fafafa;
+  padding: 22px 0;
+  border-radius: 50px;
+  position: relative;
+}
+
+.truckload .wrapper .chhotu-nav .slider {
+  position: absolute;
+  width: 33.33%;
+  height: 100%;
+  background-color: #F1AD03;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+
+.truckload .wrapper .chhotu-nav .menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  z-index: 1;
+}
+
+/* .chhotu-container */
+
+.truckload .wrapper .chhotu-container {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.truckload .wrapper .chhotu-container h2 {
+  margin-top: 1rem;
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.truckload .wrapper .chhotu-container .description {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.truckload .wrapper .chhotu-container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  width: 100%;
+  ;
+  border-radius: 10px;
+  gap: 3rem;
+  background-color: rgba(167, 164, 164, 0.245);
+  padding: 3rem 3rem;
+
+}
+
+.truckload .wrapper .chhotu-container .grid-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.truckload .wrapper .chhotu-container .grid-item span {
+  background-color: rgb(1, 16, 28);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.truckload .wrapper .chhotu-container .grid-item span img {
+  object-fit: cover;
+  width: 2rem;
+  height: 2rem;
+  filter: invert(1);
+}
+
+.truckload .wrapper .chhotu-container .grid-item .grid-item-p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.637);
+  font-weight: bold;
+}
+
+/* grid2  */
+
+.truckload .wrapper .chhotu-container .grid2 {
+  background-color: transparent;
+}
+
+.truckload .wrapper .chhotu-container .grid-item2 span {
+  background-color: rgb(22, 143, 243);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.truckload .wrapper .chhotu-container .grid-item2 span img{
+  object-fit: cover;
+  width: 2rem;
+  height: 2rem;
+  filter: invert(1);
+}
+
+.truckload .wrapper .chhotu-container .grid-item2 .grid2-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.truckload .wrapper .chhotu-container button {
+  width: fit-content;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.393);
+  margin-top: 2rem;
+  ;
+  margin-left: 3.5rem;
+}
+
+.truckload .wrapper .chhotu-container button:hover {
+  background-color: #0197EE;
+  color: white;
+  border-color: #0197EE;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+
+@media (max-width:584px){
+  .truckload .wrapper .chhotu-container .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* .marketplace */
+
+.truckload .marketplace {
+  max-width: 85%;
+  height: 40rem;
+  margin: auto;
+  /* padding-bottom: 100px; */
+  position: relative;
+  background-color: none;
+  position: relative;
+  color: white;
+}
+
+
+.truckload .marketplace img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.truckload .overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.truckload .overlap img {
+  width: 5rem;
+  filter: invert(1);
+}
+
+.truckload .overlap .wrapper {
+  background-color: transparent;
+  max-width: 30rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.truckload .overlap .wrapper .image {
+  background-color: #0197EE;
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.truckload .overlap .wrapper button {
+  color: white;
+  background-color: #0197EE;
+  border: none;
+  padding: 20px 25px;
+  border-radius: 10px;
+
+}
