@@ -1,0 +1,48 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+button {
+  color: darkgreen;
+  /* background-color: darkgreen; */
+  border: 2px solid darkgreen;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hoverEffect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: #f60202;
+  opacity: 0;
+  animation: fadeIn 1s 0s linear infinite;
+}

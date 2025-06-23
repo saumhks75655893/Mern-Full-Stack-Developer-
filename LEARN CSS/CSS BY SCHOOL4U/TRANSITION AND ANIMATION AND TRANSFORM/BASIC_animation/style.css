@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* color change animation */
+@keyframes colorChage {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: green;
+    left: 1180px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 1180px;
+    top: 50%;
+  }
+
+  75% {
+    background-color: yellow;
+    left: 0;
+    top: 50%;
+  }
+
+  100% {
+    background-color: rgb(20, 245, 128);
+    left: 0;
+    top: 0;
+  }
+}
+
+.main {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: colorChage;
+  /* animation-duration: 10s;
+  animation-delay: 3s;
+  animation-iteration-count: 3; 
+  animation-timing-function: linear; */
+  /* shorthand for upper*/
+  animation: colorChage 10s 0s 4 ease-out;
+}
+
+/* truck animation */
+@keyframes truckMove{
+  0%{
+    left:-100px;
+  }
+  100%{
+    left: 120%;
+  }
+}
+
+@keyframes wheelRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.truck {
+  position: fixed;
+  bottom: 0px;
+  animation:truckMove 5s 0s linear infinite;
+  left: -100px;
+
+}
+
+.truck img {
+  width: 100px;
+  height: 100px;
+
+}
+
+.wheel-outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 68px;
+  left: 15px;
+  width: 70px;
+  color: black;
+
+  /* background-color: black; */
+}
+
+.wheel-outer img {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 1;
+  animation: wheelRotate 1s linear infinite;
+
+}
