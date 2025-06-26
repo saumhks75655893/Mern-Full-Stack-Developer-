@@ -66,3 +66,40 @@ console.log("FUNCTIONS");
 // }
 
 // func();
+
+// // TYPES OF FUNCTION
+
+// // 1. Normal Function
+// function func() {
+//   console.log("My name is Himanshu Kumar..!");
+// }
+// func();
+
+// // 2. Function expression
+
+// let sum = function (a, b) {
+//   return a + b;
+// };
+
+// console.log(sum(4, 5));
+
+// // 3. Fat Arrow Function
+
+// let name = () => {
+//   console.log("Himanshu Kumar");
+// };
+
+// name();
+
+// // 4. Anonymous function
+
+// setTimeout(function () {
+//   console.log("Himanshu Kumar");
+// }, 3000);
+
+// 5. Immediate Invoked Function Expression (IIFE)
+
+console.log("Himanshu Kumar");
+(function () {
+  console.log("Himanshu Kumar");
+})();
