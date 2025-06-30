@@ -98,4 +98,112 @@ console.log("*********** ARRAY METHODS ************ ");
 // console.log(shortRes);
 // console.log(shortRes1);
 
+// // FIND (no change in original array)
+// let arr1 = ["apple", "mango", "guava"];
+// let findRes = arr1.find((item) => {
+//   return item === "mango";
+// });
+// let findRes1 = arr1.find((item) => {
+//   return item === "lichi";
+// });
 
+// console.log(arr1);
+// console.log(findRes);
+// console.log(findRes1);
+
+// // FLAT (no change in original array)
+
+// let heroes = [
+//   "spiderman",
+//   "thor",
+//   [
+//     "howkeye",
+//     "captain-america",
+//     [
+//       "hulk",
+//       "black-window",
+//       "iron-man",
+//       ["loki", "wonda", ["doctor-strange", "thanos"], "groot"],
+//       "captain-marvel",
+//     ],
+//     "black-panther",
+//   ],
+//   "ant-man",
+// ];
+// let flatRes = heroes.flat();
+// let flatRes1 = heroes.flat(2);
+// let flatRes2 = heroes.flat(Infinity);
+// console.log(heroes);
+// console.log(flatRes);
+// console.log(flatRes1);
+// console.log(flatRes2);
+
+// // DEEP ANALYSIS OF SORT() METHOD
+
+// let a = [1, 2, 5, 10, 20, 40, 55];
+// let b = JSON.parse(JSON.stringify(a)); // deep copy of array a
+
+// console.log("array a : Original array : ", a);
+// // console.log("sort method without using compare :", a.sort()); // [1,10,2,20,40, 5,55] -> due to the string convertion
+
+// console.log("*".repeat(50));
+// let sortRes = a.sort((a, b) => {
+//   console.log(a, b);
+//   return a - b;
+// });
+// console.log("array a : sort method with compare : ", sortRes);
+
+// console.log("*".repeat(50));
+// console.log("array b: original array : ", b);
+// let sortRes1 = b.sort((a, b) => {
+//   console.log(a, b);
+//   return b - a;
+// });
+
+// console.log("array b: sort method with compare : ", sortRes1);
+
+// ARRAY ITERATION FUNCTION OR FUNCTIONAL ARRAY METHODS (map(return new array), filter(return new array), reduce(returns single value), foreach(returns undefined))
+
+let arr = [1, 2, 3, 4, 5];
+
+// MAP() - element, index, array
+
+// arr.map((element, index, arr) => {
+//   console.log(element, index, arr);
+// });
+
+// let elemVal = "";
+// let mapArray = arr.map((elem) => {
+//   elemVal = elemVal + elem + " ";
+//   return elem * 2;
+// });
+
+// console.log("Original array : ", arr);
+// console.log("Before map array element :", elemVal);
+// console.log("Mapped Array : ", mapArray);
+
+// // FOREACH() - element, index, array
+
+// let foreachArr = arr.forEach((elem) => {
+//   return elem * 2;
+// });
+
+// console.log("Original array :", arr);
+// console.log("foreach Array : ", foreachArr);
+
+// // FILTER() - element, index, array
+
+// let filterArr = arr.filter((elem) => {
+//   return (elem * 1.5) % 2 === 0;
+// });
+
+// console.log(arr);
+// console.log("filtered array : ", filterArr);
+
+// REDUCE() - prevVal(accumulator) and currVal(current)
+
+let reduceRes = arr.reduce((prevVal, currVal) => {
+  return prevVal + currVal;
+}, 100);
+
+console.log("Reduce result : ", reduceRes);
