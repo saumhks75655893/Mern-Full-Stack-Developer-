@@ -16,7 +16,7 @@
 // let body = document.querySelector("body");
 // body.append(para);
 
-// // Q2 -> Insert a button with text 'click-me' as the first element inside the paragraph created in first question.
+// // // Q2 -> Insert a button with text 'click-me' as the first element inside the paragraph created in first question.
 
 // let button = document.createElement("button");
 // button.innerHTML = "Click Me";
@@ -32,16 +32,39 @@
 
 // console.log(para.children);
 
-// Q3 -> Create a <div> tag in html and give it a class & some styling. Now create a new class in css and try to append this class to the <div> element.
+// // // Q3 -> Create a <div> tag in html and give it a class & some styling. Now create a new class in css and try to append this class to the <div> element.
 
-let alpha = document.querySelector(".alpha");
-console.log(alpha);
-alpha.innerHTML = "SPHERE";
+// let alpha = document.querySelector(".alpha");
+// console.log(alpha);
+// alpha.innerHTML = "SPHERE";
 
-console.log(alpha.classList);
+// console.log(alpha.classList);
 
-let oldAttr = alpha.getAttribute("class");
-// alpha.classList.add("bita");
-alpha.setAttribute("class", `${oldAttr} bita`);
+// let oldAttr = alpha.getAttribute("class");
+// // alpha.classList.add("bita");
+// alpha.setAttribute("class", `${oldAttr} bita`);
 
-console.log(alpha.classList);
+// console.log(alpha.classList);
+
+// // Q4 -> Create a function that takes node and newTagName and replace the node with new node with changed tag name in DOM.
+
+function changeTagName(oldNode, newTagName) {
+  if (!(oldNode instanceof Element)) {
+    console.error("Invalid Element");
+  }
+
+  let p = document.createElement(newTagName);
+  p.innerHTML = oldNode.innerHTML;
+  for (let attr of oldNode.attributes) {
+    // console.log(attr);
+    p.setAttribute(attr.name, attr.value);
+  }
+  oldNode.replaceWith(p);
+
+  // console.log(oldNode);
+  // console.log(p);
+}
+
+let div = document.querySelector(".alpha");
+
+changeTagName(div, "p");

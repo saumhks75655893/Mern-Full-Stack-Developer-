@@ -1,0 +1,32 @@
+button {
+  background-color: #069ed1;
+  /* Light blue */
+  color: #d2d2d2;
+  /* Darker blue for contrast */
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #00a8fd;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
