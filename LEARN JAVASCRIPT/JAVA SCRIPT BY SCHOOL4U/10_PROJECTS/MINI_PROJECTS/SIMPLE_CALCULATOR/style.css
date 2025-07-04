@@ -20,7 +20,7 @@ body {
   max-width: 20rem;
   width: 100%;
   height: fit-content;
-  background-color: #0091ff;
+  background-color: #083457;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0px 0px 2px black;
@@ -42,6 +42,7 @@ body {
 }
 
 .buttonCal {
+  user-select: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -58,7 +59,15 @@ body {
   font-size: 20px;
   font-weight: 550;
   box-shadow: 0px 0px 10px white;
+  transition: all 0.3s linear;
+}
 
+.buttonCal button:hover {
+  scale: 1.05;
+}
+
+.buttonCal button:active {
+  scale: 0.9;
 }
 
 .buttonCal .clearBtn {
