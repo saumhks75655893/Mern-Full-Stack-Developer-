@@ -75,3 +75,12 @@ function deleteItem(id) {
   list = filteredList;
   renderList(filteredList);
 }
+
+// for the line-through working
+
+listContainer.addEventListener("click", (e) => {
+  console.log(e.target.children[0]);
+  if (e.target.classList.contains("listItems")) {
+    e.target.children[0].style.textDecoration = "line-through";
+  }
+});
