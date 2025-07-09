@@ -50,3 +50,35 @@ console.log("************** Numbers *********************");
 // let b = 1 / 0;
 // console.log(Number.isFinite(b));
 // console.log(isFinite(b));
+
+// // NUMBER INSTANCE METHODS (USED ON NUMBER PRIMTIVES)
+
+// let num = 7565893.345345;
+
+// // // toFixed method
+// console.log(num.toFixed()); // output before decimal point
+// console.log(num.toFixed(2)); // output after decimal 2 places
+// console.log(typeof num.toFixed());
+
+// // // toExponential method
+// console.log(num.toExponential()); // output the number into exponential form
+// console.log(num.toExponential(2)); // output the number into exponential form at 2 places after decimal point
+// console.log(typeof num.toExponential()); // output the type of the number into exponential form
+
+// // // toPrecision method
+// console.log(num.toPrecision()); // output the number into precision form
+// console.log(num.toPrecision(7)); // output same as before decimal point number
+// console.log(num.toPrecision(3)); // output will be in the form of exponential notation
+// console.log(typeof num.toPrecision());
+
+// // // toString method
+
+// console.log(num.toString());
+// console.log(typeof num.toString());
+
+// // // valueOf method (return premitive value)
+
+// let num = new String("3452345");
+// console.log(num);
+// console.log(num.valueOf());
+// console.log(typeof num);
