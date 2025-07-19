@@ -565,31 +565,40 @@ Imperative find v/s Declarative find
 // let result1 = numbers.ownEvery(logic);
 // console.log(result1);
 
-// // /// ===============================================> Imperative  find v/s Declarative find
+// // // /// ===============================================> Imperative  find v/s Declarative find
 
-// // =====> Declarative find
-const users = [
-  { id: 101, name: "Alice" },
-  { id: 102, name: "Bob" },
-  { id: 103, name: "Charlie" },
-];
+// // // =====> Declarative find
+// const users = [
+//   { id: 101, name: "Alice" },
+//   { id: 102, name: "Bob" },
+//   { id: 103, name: "Charlie" },
+//   { id: 104, name: "Maya" },
+//   { id: 105, name: "Haider" },
+//   { id: 106, name: "Mohan" },
+// ];
 
-const targetId = 102;
+// const targetId = 101;
 
-const user = users.find((u) => u.id === targetId);
+// const user = users.find((u) => u.id === targetId);
 
-console.log(user); // { id: 102, name: "Bob" }
+// console.log(user); // { id: 102, name: "Bob" }
 
-// // ======> Imperative find
+// // // ======> Imperative find
 
-function ownFindFunction(users) {
-  let res = {};
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].id === targetId) {
-      console.log(users[i]);
-    }
-    break;
-  }
-}
+// function logic(elem) {
+//   if (elem.id === targetId) {
+//     return elem;
+//   }
+// }
+// function ownFindFunction(logic) {
+//   for (let i = 0; i < users.length; i++) {
+//     if (logic(users[i])) {
+//       return users[i];
+//     }
+//   }
+// }
 
-console.log(ownFindFunction(users));
+// Array.prototype.ownFind = ownFindFunction;
+// let res = users.ownFind(logic);
+
+// console.log(res);
