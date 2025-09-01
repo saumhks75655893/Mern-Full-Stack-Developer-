@@ -83,19 +83,21 @@
 // // // =====================> CLASS SYNTAX (ES6) : --------------
 
 class createStudent {
-  constructor(name = "HKS", age = 21, passion = "Coding") {
+  constructor(name = "Sanjay Singhaniya", age = 21, passion = "Coding") {
     this.name = name;
     this.age = age;
     this.passion = passion;
   }
 
   intro() {
-    onsole.log(`${this.name}, ${this.age} and ${this.passion}`);
+    console.log(`${this.name}, ${this.age} and ${this.passion}`);
   }
 }
 
-let res = new createStudent("himanshu", 26, "reading");
+let res = new createStudent("Himanshu Kumar", 26, "reading");
 let res1 = new createStudent();
 
 console.log(res);
 console.log(res1);
+res.intro();
+res1.intro();

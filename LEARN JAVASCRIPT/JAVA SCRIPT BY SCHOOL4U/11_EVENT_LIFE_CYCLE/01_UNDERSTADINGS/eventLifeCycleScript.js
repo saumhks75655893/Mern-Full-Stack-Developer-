@@ -1,46 +1,46 @@
-let grandParent = document.querySelector(".grandParent");
-let Parent = document.querySelector(".Parent");
-let child = document.querySelector(".child");
+// let grandParent = document.querySelector(".grandParent");
+// let Parent = document.querySelector(".Parent");
+// let child = document.querySelector(".child");
 
-// // // EVENT PROPAGATION
+// // // // EVENT PROPAGATION
 
-// // CAPTURING PHASE (TRICKLING PHASE), TARGET PHASE, AND BUBBLING PHASE
+// // // CAPTURING PHASE (TRICKLING PHASE), TARGET PHASE, AND BUBBLING PHASE
 
-// grandParent.addEventListener(
-//   "click",
-//   () => {
-//     alert("GRAND PARENT BOX CLICKED");
-//   },
-//   true
-// ); // capturing phase
+// // grandParent.addEventListener(
+// //   "click",
+// //   () => {
+// //     alert("GRAND PARENT BOX CLICKED");
+// //   },
+// //   true
+// // ); // capturing phase
 
-// grandParent.addEventListener("click", () => {
-//   alert("GRAND PARENT BOX CLICKED");
-// }); // bubbling phase
+// // grandParent.addEventListener("click", () => {
+// //   alert("GRAND PARENT BOX CLICKED");
+// // }); // bubbling phase
 
-// child.addEventListener(
-//   "click",
-//   () => {
-//     alert("CHILD BOX CLICKED");
-//   },
-//   true
-// ); // capturing phase
+// // child.addEventListener(
+// //   "click",
+// //   () => {
+// //     alert("CHILD BOX CLICKED");
+// //   },
+// //   true
+// // ); // capturing phase
 
-// child.addEventListener("click", () => {
-//   alert("CHILD BOX CLICKED");
-// }); // bubbling phase
+// // child.addEventListener("click", () => {
+// //   alert("CHILD BOX CLICKED");
+// // }); // bubbling phase
 
-// Parent.addEventListener(
-//   "click",
-//   () => {
-//     alert("PARENT BOX CLICKED");
-//   },
-//     { capture: true }
-// ); // capturing phase
+// // Parent.addEventListener(
+// //   "click",
+// //   () => {
+// //     alert("PARENT BOX CLICKED");
+// //   },
+// //   { capture: true }
+// // ); // capturing phase
 
-// Parent.addEventListener("click", () => {
-//   alert("PARENT BOX CLICKED");
-// }); // bubbling phase
+// // Parent.addEventListener("click", () => {
+// //   alert("PARENT BOX CLICKED");
+// // }); // bubbling phase
 
 // // // EVENT.TARGET, EVENT.CURRENTTARGET AND THIS
 
@@ -97,11 +97,11 @@ let child = document.querySelector(".child");
 //   // console.log(this);
 // });
 
-// // // EVENT DELEGATION
+// // EVENT DELEGATION
 
-let container = document.querySelector(".container");
+// let container = document.querySelector(".container");
 
-// // USING FOR-EACH LOOP
+// // // USING FOR-EACH LOOP
 
 // let childrenArr = Array.from(container.children);
 // console.log(childrenArr);
@@ -112,12 +112,12 @@ let container = document.querySelector(".container");
 //   });
 // });
 
-// // USING EVENT DELEGATION
+// // // USING EVENT DELEGATION
 
-container.addEventListener("click", (e) => {
-  let targetedValue = e.target;
+// container.addEventListener("click", (e) => {
+//   let targetedValue = e.target;
 
-  if (targetedValue.className === "box") {
-    console.log(targetedValue.textContent);
-  }
-});
+//   if (targetedValue.className === "box") {
+//     console.log(targetedValue.textContent);
+//   }
+// });

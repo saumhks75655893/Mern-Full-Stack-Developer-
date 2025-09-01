@@ -15,7 +15,7 @@ body {
 
 /* EVENT PROPAGATION */
 
-/* .grandParent {
+.grandParent {
   padding: 85px;
   background-color: teal;
 }
@@ -30,7 +30,7 @@ body {
   padding: 50px;
   background-color: black;
   margin: 30px;
-} */
+}
 
 .container {
   width: 100%;

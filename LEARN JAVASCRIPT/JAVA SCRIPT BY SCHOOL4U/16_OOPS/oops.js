@@ -90,64 +90,64 @@
 // amanAcc.setter = 5000;
 // amanAcc.deposit(56466);
 
-// // // // ==========================> INHERITANCE
+// // // ==========================> INHERITANCE
 
-// class Car {
-//   constructor(brand, color) {
-//     this.brand = brand;
-//     this.color = color;
-//   }
+class Car {
+  constructor(brand, color) {
+    this.brand = brand;
+    this.color = color;
+  }
 
-//   start() {
-//     console.log(`${this.brand} is starting...`);
-//   }
-//   stop() {
-//     console.log(`${this.brand} is stopping...`);
+  start() {
+    console.log(`${this.brand} is starting...`);
+  }
+  stop() {
+    console.log(`${this.brand} is stopping...`);
+  }
+}
+
+class ElectricCar extends Car {
+  constructor(brand, color, battery) {
+    super(brand, color);
+    this.battery = battery;
+  }
+  charging() {
+    console.log(`${this.brand} is charging...`);
+  }
+}
+
+let tesla = new ElectricCar("tesla", "black", 220);
+console.log(tesla);
+tesla.start();
+tesla.stop();
+tesla.charging();
+
+let car = new Car("Toyota", "Silver");
+console.log(car);
+
+// // // // ======================> POLYMORPHISM
+
+// class MediaPlayer {
+//   play() {
+//     console.log("Play Media");
 //   }
 // }
 
-// class ElectricCar extends Car {
-//   constructor(brand, color, battery) {
-//     super(brand, color);
-//     this.battery = battery;
-//   }
-//   charging() {
-//     console.log(`${this.brand} is charging...`);
+// class MusicPlayer extends MediaPlayer {
+//   play() {
+//     console.log("Play Music");
 //   }
 // }
 
-// let tesla = new ElectricCar("tesla", "black", 220);
-// console.log(tesla);
-// tesla.start();
-// tesla.stop();
-// tesla.charging();
+// class VideoPlayer extends MediaPlayer {
+//   play() {
+//     console.log("Play Video");
+//   }
+// }
 
-// let car = new Car("Toyota", "Silver");
-// console.log(car);
-
-// // // ======================> POLYMORPHISM
-
-class MediaPlayer {
-  play() {
-    console.log("Play Media");
-  }
-}
-
-class MusicPlayer extends MediaPlayer {
-  play() {
-    console.log("Play Music");
-  }
-}
-
-class VideoPlayer extends MediaPlayer {
-  play() {
-    console.log("Play Video");
-  }
-}
-
-let ob1 = new MusicPlayer();
-ob1.play();
-let ob2 = new VideoPlayer();
-ob2.play();
-let ob3 = new MediaPlayer();
-ob3.play();
+// let ob1 = new MusicPlayer();
+// ob1.play();
+// let ob2 = new VideoPlayer();
+// ob2.play();
+// let ob3 = new MediaPlayer();
+// ob3.play();
