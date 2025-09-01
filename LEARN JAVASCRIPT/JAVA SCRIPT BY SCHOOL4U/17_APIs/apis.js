@@ -7,7 +7,7 @@
 
 // fetchData();
 
-// =============> CREATING A WEATHER WEBSITE
+// // // // =============> CREATING A WEATHER WEBSITE
 
 let container = document.querySelector(".container");
 console.log(container);

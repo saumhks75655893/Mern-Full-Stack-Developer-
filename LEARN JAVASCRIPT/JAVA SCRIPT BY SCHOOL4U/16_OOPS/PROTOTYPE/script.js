@@ -51,5 +51,5 @@
 //   }
 // }
 
-// let s1 = new Student("hks", 21);
+// let s1 = new Student("Raghav", 456);
 // console.log(s1);
