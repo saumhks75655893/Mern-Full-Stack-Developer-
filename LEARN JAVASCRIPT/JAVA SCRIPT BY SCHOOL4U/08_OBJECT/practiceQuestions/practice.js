@@ -67,8 +67,6 @@ console.log("***************** Practice Questions ***************");
 //   { name: "Chameli", role: "superAdmin" },
 // ];
 
-// own
-
 // console.log(users[0].role);
 // let names = [];
 // let nameOfUsersForAdmin = (adminNames) => {
@@ -79,10 +77,11 @@ console.log("***************** Practice Questions ***************");
 //   }
 // };
 
+// // own
 // nameOfUsersForAdmin(users);
 // console.log(names);
 
-// seen
+// // seen
 // function filteredArray(arr, role) {
 //   let filteredItem = arr.filter((item) => {
 //     return item.role === role;
@@ -152,6 +151,8 @@ console.log("***************** Practice Questions ***************");
 //   for (let key in params) {
 //     url = url + `${key}=${params[key]}&`;
 //   }
+
+//   // return url;
 
 //   let newUrl = url.slice(0, url.length - 1);
 //   return newUrl;

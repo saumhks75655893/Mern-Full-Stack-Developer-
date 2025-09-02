@@ -13,8 +13,8 @@ button.addEventListener("click", () => {
 let stopButton = document.querySelector(".stop");
 
 stopButton.addEventListener("click", () => {
-  div.style.backgroundColor = "red";
-  div.style.color = "white";
+  div.style.backgroundColor = "teal";
+  div.style.color = "black";
   // div.style.scale = "0.5";
   div.style.borderRadius = "0%";
   div.classList.remove("circle1");

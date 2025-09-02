@@ -6,14 +6,14 @@ console.log("******************** OBJECT METHODS ****************** ");
 //   class: "PG",
 // };
 
-// looping in object
+// // // looping in object
 
-// console.log(obj);
-// for (let key in obj) {
-//   console.log(key, obj[key]);
-// }
+// // console.log(obj);
+// // for (let key in obj) {
+// //   console.log(key, obj[key]);
+// // }
 
-// // Object.keys(obj)
+// // Object.keys(obj);
 
 // let key = Object.keys(obj);
 // console.log(key);
@@ -22,7 +22,7 @@ console.log("******************** OBJECT METHODS ****************** ");
 // let value = Object.values(obj);
 // console.log(value);
 
-// // Object.entries(obj);
+// // // Object.entries(obj);
 
 // console.log(Object.entries(obj));
 
@@ -42,11 +42,11 @@ console.log("******************** OBJECT METHODS ****************** ");
 
 // // FREEZE AND SEAL METHODS
 
-// let obj = {
-//   name: "Himanshu Kumar",
-//   age: 21,
-//   class: "PG",
-// };
+let obj = {
+  name: "Himanshu Kumar",
+  age: 21,
+  class: "PG",
+};
 
 // // freeze() no change in object further
 
@@ -71,19 +71,19 @@ console.log("******************** OBJECT METHODS ****************** ");
 // console.log(obj.hasOwnProperty("age"));
 // console.log(obj.hasOwnProperty("qualification")); // otherwise false
 
-// DESTRUCTURING
+// // DESTRUCTURING
 
-let obj = {
-  name: "himanshu",
-  className: "PG",
-};
+// let obj = {
+//   name: "himanshu",
+//   className: "PG",
+// };
 
-console.log(obj);
+// console.log(obj);
 
 // let name = obj.name;
 // let className = obj.className;
 // console.log(name, className);
 
 // destructuring
-let { name, className } = obj;
-console.log(name, className);
+// let { name, className } = obj;
+// console.log(name, className);

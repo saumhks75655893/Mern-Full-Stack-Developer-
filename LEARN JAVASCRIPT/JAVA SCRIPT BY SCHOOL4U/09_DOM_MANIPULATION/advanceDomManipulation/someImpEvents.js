@@ -6,9 +6,9 @@ let submitValue = document.querySelector(".submit");
 let resetValue = document.querySelector(".reset");
 let h1 = document.querySelector("h1");
 
-// *****************************************************************************************
-// // // MOUSE EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // MOUSE EVENTS
+// // *****************************************************************************************
 
 // secondButton.addEventListener("click", () => {
 //   console.log("clicked");
@@ -54,9 +54,9 @@ let h1 = document.querySelector("h1");
 //   console.log("AUX CLICK");
 // });
 
-// *****************************************************************************************
-// // // KEYBOARD EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // KEYBOARD EVENTS
+// // *****************************************************************************************
 
 // secondButton.addEventListener("keypress", () => {
 //   console.log("KEY PRESS");
@@ -70,9 +70,9 @@ let h1 = document.querySelector("h1");
 //   console.log("KEY UP");
 // });
 
-// *****************************************************************************************
-// // // FORM EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // FORM EVENTS
+// // *****************************************************************************************
 
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
@@ -100,9 +100,9 @@ let h1 = document.querySelector("h1");
 //   console.log(inputValue.value);
 // });
 
-// *****************************************************************************************
-// // // TOUCH EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // TOUCH EVENTS
+// // *****************************************************************************************
 
 // div.addEventListener("touchstart", () => {
 //   console.log("Finger touch the screen");
@@ -120,9 +120,9 @@ let h1 = document.querySelector("h1");
 //   console.log("Finger touch interrupted");
 // });
 
-// *****************************************************************************************
-// // // WINDOW EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // WINDOW EVENTS
+// // *****************************************************************************************
 
 // window.addEventListener("scroll", () => {
 //   console.log("Scrolling the window");
@@ -140,21 +140,21 @@ let h1 = document.querySelector("h1");
 //   console.log("DOM is fully loaded without waiting for styles or images");
 // });
 
-// *****************************************************************************************
-// // // CLIPBOARD EVENTS
-// *****************************************************************************************
+// // *****************************************************************************************
+// // // // CLIPBOARD EVENTS
+// // *****************************************************************************************
 
-h1.addEventListener("copy", () => {
-  console.log("Copied string :", window.getSelection().toString());
-});
+// h1.addEventListener("copy", () => {
+//   console.log("Copied string :", window.getSelection().toString());
+// });
 
-h1.addEventListener("cut", () => {
-  console.log("Cut string :", window.getSelection().toString());
-});
+// h1.addEventListener("cut", () => {
+//   console.log("Cut string :", window.getSelection().toString());
+// });
 
-inputValue.addEventListener("paste", (e) => {
-  e.preventDefault();
-  const pastedText = e.clipboardData.getData("text");
-  inputValue.value = pastedText;
-  console.log("Pasted text:", pastedText);
-});
+// inputValue.addEventListener("paste", (e) => {
+//   e.preventDefault();
+//   const pastedText = e.clipboardData.getData("text");
+//   inputValue.value = pastedText;
+//   console.log("Pasted text:", pastedText);
+// });

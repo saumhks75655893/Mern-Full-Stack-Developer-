@@ -97,9 +97,9 @@ console.log("FUNCTIONS");
 //   console.log("Himanshu Kumar");
 // }, 3000);
 
-// 5. Immediate Invoked Function Expression (IIFE)
+// // 5. Immediate Invoked Function Expression (IIFE)
 
-console.log("Himanshu Kumar");
-(function () {
-  console.log("Himanshu Kumar");
-})();
+// console.log("Himanshu Kumar");
+// (function () {
+//   console.log("Himanshu Kumar");
+// })();

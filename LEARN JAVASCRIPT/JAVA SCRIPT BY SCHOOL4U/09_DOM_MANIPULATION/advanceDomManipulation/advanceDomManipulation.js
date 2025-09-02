@@ -1,5 +1,5 @@
-// // // 1. DOM
-// **************************************************************************
+// // // // 1. DOM
+// // **************************************************************************
 
 // console.log(document);
 // console.dir(document);
@@ -7,9 +7,9 @@
 // let a = document.querySelectorAll("div");
 // console.log(a);
 
-// ****************************************************************************
-// // // 2. SELECTION OF HTML ELEMENTS
-// ****************************************************************************
+// // ****************************************************************************
+// // // // 2. SELECTION OF HTML ELEMENTS
+// // ****************************************************************************
 
 // let tagSelector = document.getElementsByTagName("h1");
 // console.log(tagSelector);
@@ -29,7 +29,7 @@
 // *********************************************************************************
 // // ACCESSIBILITY OF PARENT AND THEIR CHILDS NODES
 // *********************************************************************************
-// let parentChildNodes = document.getElementById("write");
+// let parentChildNodes = document.querySelector(".write");
 // console.log(parentChildNodes);
 // console.log(parentChildNodes.firstChild);
 // console.log(parentChildNodes.lastChild);
@@ -45,7 +45,7 @@
 // // // 3. MANIPULATING THE HTML
 // **********************************************************************************
 
-// let h1 = document.querySelector(".h1");
+let h1 = document.querySelector(".h1");
 
 // **********************************************************************************
 // // TAG MANUPULATION (NOT POSSIBLE )

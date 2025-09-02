@@ -1,6 +1,6 @@
 console.log("***************** OBJECT ***************");
 
-// object creation ( Literal method )
+// // object creation ( Literal method )
 
 // let obj = {
 //   name: "HKS",
