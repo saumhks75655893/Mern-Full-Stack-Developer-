@@ -14,28 +14,27 @@
 // console.log(--num1);
 // console.log(num1--);
 
-// Q2 -> Can you chain assignment operators? Yes
+// // Q2 -> Can you chain assignment operators? Yes
 
 // let a = (b = c = 4);
 // console.log("a = ", a);
 // console.log("b = ", b);
 // console.log("c = ", c);
 
-// Q3 -> Get user to a number using prompt and check whether the number is even or odd using ternary operator.
+// // Q3 -> Get user to a number using prompt and check whether the number is even or odd using ternary operator.
 
 // let num = parseInt(prompt("Enter a number : "));
 // const result = num % 2 == 0 ? "Even" : "Odd";
 // console.log(num, " is ", result);
 
-// Q4 -> What is the final value of x?
-/*
-let x = 5
-x += 3
-x -= 2
-x *= 4
-x /= 6
-x %= 3
-*/
+// // Q4 -> What is the final value of x?
+
+// let x = 5;
+// x += 3;
+// x -= 2;
+// x *= 4;
+// x /= 6;
+// x %= 3;
 
 // let x = 5;
 // x += 3;
@@ -51,7 +50,7 @@ x %= 3
 // const result = num >= 10 && num <= 20 ? "within range" : "Out of the range";
 // console.log(result);
 
-// Q6 -> Write a program to find the largest number between 3 numbers using ternary operator.
+// // Q6 -> Write a program to find the largest number between 3 numbers using ternary operator.
 // let a = 10,
 //   b = 120,
 //   c = 30;
