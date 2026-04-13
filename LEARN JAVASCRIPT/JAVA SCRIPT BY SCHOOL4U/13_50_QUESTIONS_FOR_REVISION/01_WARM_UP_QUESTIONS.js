@@ -20,9 +20,9 @@
 // function combineArrays(array1, array2) {
 //   // return array1 + "," + array2; // Combine the two arrays into a string with commas
 
-//   return [...array1, ...array2]; // Combine the two arrays into a single array and then join them into a string with commas
+//   // return [...array1, ...array2]; // Combine the two arrays into a single array and then join them into a string with commas
 
-//   // return array1.concat(array2); // Combine the two arrays into a single array and then join them into a string with commas
+//   return array1.concat(array2); // Combine the two arrays into a single array and then join them into a string with commas
 // }
 
 // console.log(combineArrays(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
@@ -33,12 +33,12 @@
 
 // // Q4 -> Creates a function that takes an array containing both  numbers and strings and returns an array containing only the string  values.
 
-// let mixedArray = [1, "hello", 2, "world", 3, "JavaScript"];
+let mixedArray = [1, "hello", 2, "world", 3, "JavaScript"];
 
-// function filterStringArray(array) {
-//   return array.filter((obj) => typeof obj === "string");
-// }
-// console.log(filterStringArray(mixedArray)); // Output: ["hello", "world", "JavaScript"]
+function filterStringArray(array) {
+  return array.filter((obj) => typeof obj === "string");
+}
+console.log(filterStringArray(mixedArray)); // Output: ["hello", "world", "JavaScript"]
 
 // // Q5 -> Find the maximum number in an array.
 

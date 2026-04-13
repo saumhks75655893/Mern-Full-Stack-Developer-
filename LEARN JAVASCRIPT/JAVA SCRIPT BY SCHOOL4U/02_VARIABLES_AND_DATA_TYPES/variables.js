@@ -12,6 +12,6 @@ comment hota hai
 
 // Variable - variable are like the container used to store the value. It's used to store data which can be used and manipulate throughout the program.
 
-let name;
-name = "Himanshu Kumar";
-console.log(name);
+let name1;
+name1 = "Himanshu Kumar";
+console.log(name1);
