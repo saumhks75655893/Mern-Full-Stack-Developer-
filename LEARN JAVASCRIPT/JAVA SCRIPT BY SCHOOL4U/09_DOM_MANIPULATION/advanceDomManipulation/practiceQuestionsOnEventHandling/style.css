@@ -1,0 +1,51 @@
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.decBtn {
+  background-color: red;
+}
+
+.incBtn {
+  background-color: green;
+}
+
+.counterValue {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form {
+  max-width: 90%;
+  width: 100%;
+  background-color: teal;
+  padding: 20px;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0px;
+  height: 30px;
+  outline: blue;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px white;
+}
+
+button {
+  width: 100%;
+}
+
+div {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 90%;
+  height: 20%;
+  padding: 20px;
+}
