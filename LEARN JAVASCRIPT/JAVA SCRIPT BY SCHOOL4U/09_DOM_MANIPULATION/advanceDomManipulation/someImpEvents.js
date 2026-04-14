@@ -1,10 +1,10 @@
-let div = document.querySelector(".alpha");
-let secondButton = document.querySelector(".secondButton");
-let form = document.querySelector("form");
-let inputValue = document.querySelector(".inputValue");
-let submitValue = document.querySelector(".submit");
-let resetValue = document.querySelector(".reset");
-let h1 = document.querySelector("h1");
+// let div = document.querySelector(".alpha");
+// let secondButton = document.querySelector(".secondButton");
+// let form = document.querySelector("form");
+// let inputValue = document.querySelector(".inputValue");
+// let submitValue = document.querySelector(".submit");
+// let resetValue = document.querySelector(".reset");
+// let h1 = document.querySelector("h1");
 
 // // *****************************************************************************************
 // // // // MOUSE EVENTS
