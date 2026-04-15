@@ -152,44 +152,48 @@ let h1 = document.querySelector(".h1");
 // // // // ATTRIBUTE
 // // ***********************************************************************************
 
-// let alpha = document.querySelector(".alpha"); //selecting the alpha element
-// console.log(alpha);
-// let alphaAttributes = alpha.attributes; // to see all the attibutes used in the alpha element
-// console.log(alphaAttributes); // for output of attribute list
-// console.log(alphaAttributes[0]); //output-> alpha :  for output of attribute present at 0th key
-// console.log(alphaAttributes[0].nodeValue); // for output of attribute value which is present at 0th key/index
-// console.log(alphaAttributes[0].value); // same as upper
+// let Div = document.querySelector(".div"); //selecting the alpha element
+// console.log(Div);
+// console.log(Div.getAttribute("title"));
+// let divAttributes = Div.attributes; // to see all the attibutes used in the div element
+// console.log(divAttributes[1].nodeName); // for output of attribute list
+// console.log(divAttributes.class.value); // same as upper
+// Div.setAttribute("class", `${divAttributes.class.value} box`);
+// console.log(Div.getAttribute("class")); // for output of attribute value which is present at 0th key/index
+// console.log(divAttributes[0]); //output-> div :  for output of attribute present at 0th key
+// console.log(divAttributes[0].nodeValue); // for output of attribute value which is present at 0th key/index
+// console.log(divAttributes[0].value); // same as upper
 
-// console.log(alpha.getAttribute("title")); // same as upper but using the property of attributes
+// console.log(Div.getAttribute("title")); // same as upper but using the property of attributes
 
-// alpha.setAttribute("class", "hello");
-// let oldAttr = alphaAttributes[0].value; // output -> hello
+// Div.setAttribute("class", "hello");
+// let oldAttr = divAttributes[0].value; // output -> hello
 
-// alpha.setAttribute("class", `${oldAttr} alpha`);
-// console.log(alpha.getAttribute("class"));
+// Div.setAttribute("class", `${oldAttr} div`);
+// console.log(Div.getAttribute("class"));
 
-// ***********************************************************************************
-// // // 4. MANIPULATING THE CSS : -----------------
-// ***********************************************************************************
+// // ***********************************************************************************
+// // // // 4. MANIPULATING THE CSS : -----------------
+// // ***********************************************************************************
 
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
 
-// USING ATTRIBUTE
-div.setAttribute("class", "alpha");
-div.setAttribute("style", "background-color: green; color: white;");
+// // USING ATTRIBUTE
+// div.setAttribute("class", "alpha");
+// div.setAttribute("style", "background-color: green; color: white;");
 
-// USING STYLE PROPERTY
-div.style.backgroundColor = "yellow";
-div.style.color = "green";
+// // USING STYLE PROPERTY
+// div.style.backgroundColor = "yellow";
+// div.style.color = "green";
 
-// USING CSSTEXT PROPERTY
-div.style.cssText = "background-color: red; color: green; font-size: 23px;";
+// // USING CSSTEXT PROPERTY
+// div.style.cssText = "background-color: red; color: green; font-size: 23px;";
 
-// USING CLASSNAME PROPERTY
-console.log(div.className);
-div.className = "bita";
-div.className = "theta";
-console.log(div.className);
+// // USING CLASSNAME PROPERTY
+// console.log(div.className);
+// div.className = "bita";
+// div.className = "theta";
+// console.log(div.className);
 
 // // // USING CLASSLIST PROPERTY : ADD(), REMOVE(), TOGGLE()-> IF PRESENT REMOVE, IF NOT PRESENT ADD, CONTAINS() ->IF PRESENT TRUE, OTHERWISE FALSE
 
@@ -207,8 +211,8 @@ console.log(div.className);
 // // // 5. EVENT HANDLING
 // **********************************************************************************
 
-// // PROPERTY METHOD
-// **********************************************************************************
+// // // PROPERTY METHOD
+// // **********************************************************************************
 
 // let frstBtn = document.querySelector(".firstButton");
 
@@ -219,8 +223,8 @@ console.log(div.className);
 //   console.log("I'm the clicked of property method - 2nd time");
 // };
 
-// // LISTENER METHOD
-// **********************************************************************************
+// // // LISTENER METHOD
+// // **********************************************************************************
 
 let secondButton = document.querySelector(".secondButton");
 
@@ -228,31 +232,36 @@ let secondButton = document.querySelector(".secondButton");
 //   console.log("Ye click addEventListener wala hai ... ");
 // });
 
-// secondButton.addEventListener("click", () => {
-//   console.log("Ye click addEventListener wala hai ... -> 2nd time ");
-// });
+// // secondButton.addEventListener("click", () => {
+// //   console.log("Ye click addEventListener wala hai ... -> 2nd time ");
+// // });
 
-let eventHapp = function (eventObj) {
-  console.log(eventObj);
-};
+// let eventHapp = function (eventObj) {
+//   console.log(eventObj);
+// };
 
-// REMOVE EVENT LISTENER
-// **********************************************************************************
+// // REMOVE EVENT LISTENER
+// // **********************************************************************************
 
-secondButton.addEventListener("click", eventHapp);
-secondButton.removeEventListener("click", eventHapp);
 // secondButton.addEventListener("click", eventHapp);
+// secondButton.removeEventListener("click", eventHapp);
+// // secondButton.addEventListener("click", eventHapp);
 
-// EVENT OBJECT
-// **********************************************************************************
+// // // EVENT OBJECT
+// // // **********************************************************************************
 
-secondButton.addEventListener("click", (eventObj) => {
-  console.log(eventObj);
-});
-
-secondButton.addEventListener("click", (eventObj) => {
-  console.log(eventObj.target);
-  console.log(eventObj.type);
-});
-
-secondButton.addEventListener("click", eventHapp);
+// secondButton.addEventListener("click", (eventObj) => {
+  //   console.log(eventObj);
+  // });
+  
+  // secondButton.addEventListener("click", (eventObj) => {
+    //   console.log(eventObj.target);
+    //   console.log(eventObj.type);
+    //   console.log(eventObj.view);
+    // });
+    
+    let eventHapp1 = function (eventObj) {
+      console.log(eventObj);
+    };
+    secondButton.addEventListener("click", eventHapp1);
+    

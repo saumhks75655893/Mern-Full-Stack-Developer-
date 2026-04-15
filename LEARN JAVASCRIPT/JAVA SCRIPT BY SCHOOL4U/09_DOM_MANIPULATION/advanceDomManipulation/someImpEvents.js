@@ -1,58 +1,58 @@
-// let div = document.querySelector(".alpha");
-// let secondButton = document.querySelector(".secondButton");
-// let form = document.querySelector("form");
-// let inputValue = document.querySelector(".inputValue");
-// let submitValue = document.querySelector(".submit");
-// let resetValue = document.querySelector(".reset");
-// let h1 = document.querySelector("h1");
+let div = document.querySelector(".alpha");
+let secondButton = document.querySelector(".secondButton");
+let form = document.querySelector("form");
+let inputValue = document.querySelector(".inputValue");
+let submitValue = document.querySelector(".submit");
+let resetValue = document.querySelector(".reset");
+let h1 = document.querySelector("h1");
 
-// // *****************************************************************************************
-// // // // MOUSE EVENTS
-// // *****************************************************************************************
+// *****************************************************************************************
+// // // MOUSE EVENTS
+// *****************************************************************************************
 
-// secondButton.addEventListener("click", () => {
-//   console.log("clicked");
-// });
+secondButton.addEventListener("click", () => {
+  console.log("clicked");
+});
 
-// secondButton.addEventListener("dblclick", () => {
-//   console.log("double clicked");
-// });
+secondButton.addEventListener("dblclick", () => {
+  console.log("double clicked");
+});
 
-// secondButton.addEventListener("mouseup", () => {
-//   console.log("Mouse Up");
-// });
+secondButton.addEventListener("mouseup", () => {
+  console.log("Mouse Up");
+});
 
-// secondButton.addEventListener("mousedown", () => {
-//   console.log("Mouse Down");
-// });
+secondButton.addEventListener("mousedown", () => {
+  console.log("Mouse Down");
+});
 
-// div.addEventListener("mouseenter", () => {
-//   console.log("MOUSE ENTER");
-// });
+div.addEventListener("mouseenter", () => {
+  console.log("MOUSE ENTER");
+});
 
-// div.addEventListener("mouseleave", () => {
-//   console.log("MOUSE LEAVE");
-// });
+div.addEventListener("mouseleave", () => {
+  console.log("MOUSE LEAVE");
+});
 
-// div.addEventListener("mouseover", () => {
-//   console.log("MOUSE OVER");
-// });
+div.addEventListener("mouseover", () => {
+  console.log("MOUSE OVER");
+});
 
-// div.addEventListener("mouseout", () => {
-//   console.log("MOUSE OUT");
-// });
+div.addEventListener("mouseout", () => {
+  console.log("MOUSE OUT");
+});
 
-// div.addEventListener("mousemove", () => {
-//   console.log("MOUSE MOVE");
-// });
+div.addEventListener("mousemove", () => {
+  console.log("MOUSE MOVE");
+});
 
-// div.addEventListener("contextmenu", () => {
-//   console.log("CONTEXT MENU");
-// });
+div.addEventListener("contextmenu", () => {
+  console.log("CONTEXT MENU");
+});
 
-// div.addEventListener("auxclick", () => {
-//   console.log("AUX CLICK");
-// });
+div.addEventListener("auxclick", () => {
+  console.log("AUX CLICK");
+});
 
 // // *****************************************************************************************
 // // // // KEYBOARD EVENTS
