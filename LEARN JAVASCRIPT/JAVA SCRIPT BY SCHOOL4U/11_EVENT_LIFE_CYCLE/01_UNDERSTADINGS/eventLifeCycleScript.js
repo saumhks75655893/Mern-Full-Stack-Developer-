@@ -1,46 +1,46 @@
-// let grandParent = document.querySelector(".grandParent");
-// let Parent = document.querySelector(".Parent");
-// let child = document.querySelector(".child");
+let grandParent = document.querySelector(".grandParent");
+let Parent = document.querySelector(".Parent");
+let child = document.querySelector(".child");
 
-// // // // EVENT PROPAGATION
+// // // EVENT PROPAGATION
 
-// // // CAPTURING PHASE (TRICKLING PHASE), TARGET PHASE, AND BUBBLING PHASE
+// // CAPTURING PHASE (TRICKLING PHASE), TARGET PHASE, AND BUBBLING PHASE
 
-// // grandParent.addEventListener(
-// //   "click",
-// //   () => {
-// //     alert("GRAND PARENT BOX CLICKED");
-// //   },
-// //   true
-// // ); // capturing phase
+grandParent.addEventListener(
+  "click",
+  () => {
+    alert("GRAND PARENT BOX CLICKED");
+  },
+  true,
+); // capturing phase
 
-// // grandParent.addEventListener("click", () => {
-// //   alert("GRAND PARENT BOX CLICKED");
-// // }); // bubbling phase
+grandParent.addEventListener("click", () => {
+  alert("GRAND PARENT BOX CLICKED");
+}); // bubbling phase
 
-// // child.addEventListener(
-// //   "click",
-// //   () => {
-// //     alert("CHILD BOX CLICKED");
-// //   },
-// //   true
-// // ); // capturing phase
+child.addEventListener(
+  "click",
+  () => {
+    alert("CHILD BOX CLICKED");
+  },
+  true,
+); // capturing phase
 
-// // child.addEventListener("click", () => {
-// //   alert("CHILD BOX CLICKED");
-// // }); // bubbling phase
+child.addEventListener("click", () => {
+  alert("CHILD BOX CLICKED");
+}); // bubbling phase
 
-// // Parent.addEventListener(
-// //   "click",
-// //   () => {
-// //     alert("PARENT BOX CLICKED");
-// //   },
-// //   { capture: true }
-// // ); // capturing phase
+Parent.addEventListener(
+  "click",
+  () => {
+    alert("PARENT BOX CLICKED");
+  },
+  { capture: true },
+); // capturing phase
 
-// // Parent.addEventListener("click", () => {
-// //   alert("PARENT BOX CLICKED");
-// // }); // bubbling phase
+Parent.addEventListener("click", () => {
+  alert("PARENT BOX CLICKED");
+}); // bubbling phase
 
 // // // EVENT.TARGET, EVENT.CURRENTTARGET AND THIS
 

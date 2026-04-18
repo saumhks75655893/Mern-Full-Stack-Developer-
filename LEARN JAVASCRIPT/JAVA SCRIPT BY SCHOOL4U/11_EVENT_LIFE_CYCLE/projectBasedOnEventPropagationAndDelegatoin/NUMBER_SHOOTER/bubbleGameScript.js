@@ -4,7 +4,7 @@ let targetValue = document.querySelector(".targetValue");
 let scoreValue = document.querySelector(".scoreValue");
 
 let numberOfCircles = 60;
-let timer = 5;
+let timer = 10;
 let finalScore = 0;
 
 restartGame();
@@ -35,7 +35,7 @@ function startTimer() {
 }
 // function for reset time when restart game
 function ResetTime() {
-  timer = 5;
+  timer = 10;
   timerValue.innerText = timer;
 }
 
@@ -66,6 +66,7 @@ numberContainer.addEventListener("click", function (e) {
       scoreValue.innerText = Number(scoreValue.innerText) + 10;
       finalScore = undefined ?? scoreValue.innerText;
       targetGeneration();
+      generateCircles();
     }
   }
 });

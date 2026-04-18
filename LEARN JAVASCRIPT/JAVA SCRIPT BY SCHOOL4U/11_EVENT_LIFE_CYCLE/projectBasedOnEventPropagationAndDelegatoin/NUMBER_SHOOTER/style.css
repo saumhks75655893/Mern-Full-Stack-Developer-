@@ -85,6 +85,8 @@ header .line {
   align-items: center;
   justify-content: center;
   box-shadow: inset 0px 0px 70px red;
+  width: 100vw;
+  height: 82.4vh;
 }
 
 @keyframes blink {

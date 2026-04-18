@@ -8,6 +8,18 @@ html,
 body {
   width: 100%;
   height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+
+.openModalBtn:active {
+  transform: scale(1.1);
+}
+
+.openModalBtn:hover {
+  opacity: 0.8;
+
 }
 
 .openModalBtn {
@@ -19,6 +31,9 @@ body {
   color: white;
   font-size: 25px;
   font-weight: bold;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: linear 0.2s;
 }
 
 .modalContainer {
@@ -31,6 +46,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
+  transition: delay 5s;
 }
 
 .modalContent {
@@ -43,7 +59,9 @@ body {
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px teal;
+  transition: all step-end 0.5s;
 }
+
 /* 
 .closeModalBtn {
   padding: 15px 20px;
