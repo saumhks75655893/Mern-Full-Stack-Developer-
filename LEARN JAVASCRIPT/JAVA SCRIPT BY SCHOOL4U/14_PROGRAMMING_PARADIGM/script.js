@@ -46,7 +46,7 @@
 // checkNumber(345);
 
 // // // 2==> Declarative Paradigm : You just describe what you want, not how to do it.
-// // // // 2.1) Fnctional Programming
+// // // // 2.1) Functional Programming
 
 // let arr = [1, 2, 3, 4, 5];
 // function doubledArray(array) {

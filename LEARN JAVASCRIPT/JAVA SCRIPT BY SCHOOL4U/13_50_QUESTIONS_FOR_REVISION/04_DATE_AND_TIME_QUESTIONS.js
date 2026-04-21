@@ -6,7 +6,7 @@
 // */
 // ***************************************************************************************
 
-// let date = new Date(0);
+// let date = new Date();
 // console.log(date);
 // console.log(date.toLocaleString());
 
@@ -69,7 +69,7 @@
 
 //   // output in the format expected
 //   console.log(
-//     `${year} years ${month} months ${day} days ${hour} hours ${minute} minutes ${sec} seconnds`
+//     `${year} years ${month} months ${day} days ${hour} hours ${minute} minutes ${sec} seconnds`,
 //   );
 // }
 
@@ -82,7 +82,7 @@
 // // method -2 : ------------
 // ***************************************************************************************
 
-// import { DateTime } from "luxon";
+// import { DateTime } from "../13_50_QUESTIONS_FOR_REVISION/node_modules/luxon/build/es6/luxon.js";
 
 // let date1 = "2022-01-10T12:02:50.345Z";
 // let date2 = "2025-05-20T02:02:40.634Z";
@@ -106,7 +106,7 @@
 
 //   // output in the format expected
 //   console.log(
-//     `${years} years ${months} months ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds ${milliseconds} milliseconds`
+//     `${years} years ${months} months ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds ${milliseconds} milliseconds`,
 //   );
 // }
 
@@ -122,6 +122,7 @@
 
 // let givenDate = new Date(date).getTime();
 // let days = 7 * 24 * 60 * 60 * 1000;
+// console.log(days);
 
 // let addDay = givenDate + days;
 
@@ -174,6 +175,20 @@
 // ***************************************************************************************
 // // Q50 -> What are the different options and parameters available in toLocalString and toLocalDateString etc to format date?
 // ***************************************************************************************
-
-
-
+let date = new Date();
+console.log(date);
+console.log(
+  date.toLocaleString("en-EN", {
+    weekday: "long",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+    timeZone: "IST",
+    "Asia/Kolkata": "Asia/Kolkata",
+    timeZoneName: "short",
+  }),
+);

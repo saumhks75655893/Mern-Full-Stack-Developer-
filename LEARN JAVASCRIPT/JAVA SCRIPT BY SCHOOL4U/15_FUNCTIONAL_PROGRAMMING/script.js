@@ -261,7 +261,7 @@ Imperative find v/s Declarative find
 
 // let function2 = function func(fn, name) {
 //   console.log(`${fn()} ${name}`);
-// }; // first-class function (function2), heighter-order function (function2), callback function (fn())
+// }; // first-class function (function2), heigher-order function (function2), callback function (fn())
 
 // function2(function1, "ram");
 

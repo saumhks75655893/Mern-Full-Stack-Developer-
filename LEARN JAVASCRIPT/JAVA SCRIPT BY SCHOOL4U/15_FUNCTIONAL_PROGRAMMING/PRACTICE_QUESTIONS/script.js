@@ -68,8 +68,8 @@ No need to dig into complex state changes or global effects.
 
 */
 
-// // // ======> Q2 -> How would you use .map() to tranform a list of products into a list of HTML elements.
-// ******************************************************************************************
+// // // // ======> Q2 -> How would you use .map() to tranform a list of products into a list of HTML elements.
+// // ******************************************************************************************
 
 // let valueArr = [
 //   { name: "Himanshu Kumar", age: 23, phone: 7991861858 },
@@ -95,7 +95,7 @@ No need to dig into complex state changes or global effects.
 
 // valueArr.map((elem) => {
 //   let div = document.createElement("div");
-//   div.className = "valueContainer";
+//   div.className = "valueContainer1";
 //   div.innerHTML = `
 //       <p class="name">${elem.name}</p>
 //       <p class="email">${elem.age}</p>
@@ -151,8 +151,8 @@ No need to dig into complex state changes or global effects.
 // // // // =======> Q5 -> How would you compose multiple functions to transfrom date step-by-step (e.g. sanitize -> trim -> capitalize)? Scenario : You're preparing user input before storing it. (Expected knowledge: Function composition, chaining, pipe or compose logic.)
 // *****************************************************************************************
 
-// compose - right to left
-// pipe - left to right
+// compose -> right to left
+// pipe -> left to right
 
 // // //=======> A Example
 

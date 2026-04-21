@@ -1,16 +1,16 @@
-// // // Q16 -> What is the difference between parseInt and number?
+// // Q16 -> What is the difference between parseInt and number?
 
-// // let a = "345.34534";
-// // let b = parseInt(a); // 34
-// // let c = Number(a); // 34.345
+// let a = "345.34534";
+// let b = parseInt(a); // 34
+// let c = Number(a); // 34.345
 
-// // console.log(typeof b, b);
-// // console.log(typeof c, c);
+// console.log(typeof b, b);
+// console.log(typeof c, c);
 
-// // let d = parseInt("10", 2);
-// // let e = Number("10", 2);
-// // console.log(typeof d, d); // Output: number 2
-// // console.log(typeof e, e); // Output: number 10
+// let d = parseInt("10", 2);
+// let e = Number("10", 2);
+// console.log(typeof d, d); // Output: number 2
+// console.log(typeof e, e); // Output: number 10
 
 // let f = parseInt("110", 8);
 // let g = parseInt("110", 16);
@@ -60,16 +60,16 @@
 // //  splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 // // It returns the removed elements as an array.
 // // Changes the original array
-// // It works only arrays.
+// // It works only on arrays.
 
-// let a = [1, 2, 3, 4, 6];
-// let str = "Himanshu";
+let a = [1, 2, 3, 4, 6];
+let str = "Himanshu";
 
-// // let slicedResult = a.slice(1);
-// // console.log(slicedResult); // Output: [2, 3, 4, 6]
-// // console.log(str.slice(1, 3)); // Output: "imanshu"
-// // console.log(str.slice(3, 7));
-// // console.log(str.slice(-4, -2));
+let slicedResult = a.slice(1);
+console.log(slicedResult); // Output: [2, 3, 4, 6]
+console.log(str.slice(1, 3)); // Output: "imanshu"
+console.log(str.slice(3, 7));
+console.log(str.slice(-4, -2));
 
 // let splicedResult = a.splice(1, 2, 10, 11, 12);
 // console.log(splicedResult); // Output: [1, 2, 3, 4, 6]
