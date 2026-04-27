@@ -84,13 +84,15 @@ section .infos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(40px, 1fr));
+  /* border-radius: 50%; */
 
 }
 
 .block {
   /* width: 30px; */
   /* height: 30px; */
-  border: 1px solid var(--border-primary-color);
+  border: 0.1px solid var(--border-primary-color);
+  border-radius: 50%;
 }
 
 .fill {
@@ -99,4 +101,51 @@ section .infos {
 
 .food {
   background-color: var(--bg-food-color);
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #35353587;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .start-game,
+.modal .game-over {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.modal .start-game h3,
+.modal .game-over h3 {
+  font-size: 35px;
+}
+
+.modal .game-over {
+  display: none;
+}
+
+.btn {
+  padding: var(--spacing-s) var(--spacing-m);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: var(--border-radius-s);
+  border: none;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  transform: scale(0.9);
+
+}
+
+.btn:hover {
+  background-color: rgb(13, 46, 13);
+  color: white;
+  transform: scale(1.01);
 }
