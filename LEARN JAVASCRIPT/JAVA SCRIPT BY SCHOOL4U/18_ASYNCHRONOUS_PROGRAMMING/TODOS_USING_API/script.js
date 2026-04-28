@@ -111,7 +111,7 @@ async function editTodo(id, text) {
     body: JSON.stringify(objData),
   });
 
-  console.log(res);
+  // console.log(res);
 
   return res;
 }
