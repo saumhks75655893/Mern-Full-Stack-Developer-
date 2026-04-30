@@ -5,30 +5,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANIMATED WEBSITE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar">
-      <h3 class="logo">LOGO</h3>
-      <h3>Main</h3>
-      <h3>Menu</h3>
-      <h3>Contact</h3>
-      <h3>About</h3>
-      <h3>Blog</h3>
+  <!-- NAV BAR -->
+  <div id="nav">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="">
+    <h4>toptracker range</h4>
+    <h4>golf lessons</h4>
+    <h4>adventure golf</h4>
+    <h4>cafe</h4>
+    <h4>events</h4>
+  </div>
 
-      <h3>search: <input type="text" placeholder="Search..."></h3>
-    </nav>
-  </header>
-  <main>
+  <!-- CURSOR DESIGN -->
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline>>
+    <source src="./SFG-Website-Header-Video-0823.mp4" type="video/mp4">
+  </video>
 
-  </main>
-  <footer>
+  <!-- MAIN DIV  -->
+  <div class="main">
+    <!-- PAGE 1  -->
+    <div class="page1">
+      <h1>Eat. Drink. Play.</h1>
+      <h2>Welcome to Sidcup Family Golf!</h2>
+      <p>Sidcup Family Golf is a Toptracer driving range and crazy golf venue in Sidcup, South East London. Passionate
+        about technology, player development and making golf fun and accessible to everyone.</p>
+    </div>
+    <!-- PAGE 2 -->
+    <div class="page2">
+      <!-- PAGE 2 - SCROLLER -->
+      <div class="scroller">
+        <div class="scroller-in">
+          <h4>Toptracer Range</h4>
+          <h4>Golf Lessons</h4>
+          <h4>Adventure Golf</h4>
+          <h4>Café</h4>
+          <h4>Events</h4>
+        </div>
 
-  </footer>
+        <div class="scroller-in">
+          <h4>Toptracer Range</h4>
+          <h4>Golf Lessons</h4>
+          <h4>Adventure Golf</h4>
+          <h4>Café</h4>
+          <h4>Events</h4>
+        </div>
 
+      </div>
+      <!-- PAGE 2 - ABOUTUS -->
+      <div class="aboutUs">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1-300x200.jpg?strip=all&sharp=1"
+          alt="">
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <p>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology. Complimented
+            by a practice green and bunker, coffee shop and American Golf Store. There truly is something for everyone
+            as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.
+
+            <span>Please note: we are a cashless venue. The range closes at 10pm with last balls at 9pm.
+            </span>
+          </p>
+        </div>
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2-300x200.jpg?strip=all&sharp=1"
+          alt="">
+      </div>
+      <!-- PAGE 2 - CARDS -->
+      <div class="cards-container">
+
+        <div class="card" id="card1">
+          <div class="overlay">
+            <h4>TOPRACER RANGE</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias quos ad. Tenetur enim, commodi
+              doloribus exercitationem necessitatibus quibusdam odio maiores numquam ab iste aut soluta ut quod,
+              distinctio ipsum?</p>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="overlay">
+            <h4>ADVENTURE GOLF</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias quos ad. Tenetur enim, commodi
+              doloribus exercitationem necessitatibus quibusdam odio maiores numquam ab iste aut soluta ut quod,
+              distinctio ipsum?</p>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="overlay">
+            <h4>GOLF LESSONS</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias quos ad. Tenetur enim, commodi
+              doloribus exercitationem necessitatibus quibusdam odio maiores numquam ab iste aut soluta ut quod,
+              distinctio ipsum?</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PAGE 2 - GREEN DIV -->
+      <div class="green-div">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+        <h4>Sign up for Sidcup News and Special <span>Offers</span>
+          Straight to Your Inbox</h4>
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- SCRIPTS  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="script.js"></script>
 </body>
