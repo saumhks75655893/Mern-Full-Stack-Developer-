@@ -24,6 +24,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 99;
+  /* transition: all ease-in 0.5s; */
 }
 
 #nav img {
@@ -294,7 +295,8 @@ video {
 
 .green-div {
   height: 300px;
-  background: linear-gradient(to left bottom, rgb(43, 166, 53), rgb(164, 213, 33));
+  /* background: linear-gradient(-50deg, rgb(43, 166, 53), rgb(164, 213, 33)); */
+  background: linear-gradient(to right, #c6e600, #7ed321, #2ea043);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -305,6 +307,17 @@ video {
   object-fit: cover;
   width: 200px;
   height: 100%;
+
+}
+
+.green-div #img1 {
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+  mask-image: linear-gradient(to right, black 70%, transparent);
+}
+
+.green-div #img2 {
+  -webkit-mask-image: linear-gradient(to left, black 70%, transparent);
+  mask-image: linear-gradient(to left, black 70%, transparent);
 }
 
 .green-div h4 {
@@ -318,4 +331,111 @@ video {
 
 .green-div h4 span {
   display: block;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#page3 .infoWindow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#page3 .infoWindow img {
+  height: 45px;
+}
+
+#page3 .infoWindow #colon1 {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+
+#page3 .infoWindow #colon2 {
+  position: absolute;
+  bottom: -15%;
+  right: 18%;
+}
+
+#page3 .infoWindow p {
+  font-size: 38px;
+  font-weight: 800;
+  width: 55%;
+  text-align: center;
+
+}
+
+#page4 {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+
+}
+
+#page4>h2 {
+  z-index: 1;
+  position: absolute;
+  top: -10%;
+  font-size: 75px;
+  font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: 2px white;
+  font-family: sans-serif;
+
+}
+
+#page4 .serrat {
+  height: 60%;
+  width: 26%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #b9f70d;
+  color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+#page4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+
+#page4 h1 {
+  position: absolute;
+  font-size: 33px;
+  font-weight: 900;
+  transition: all ease 0.5s;
+}
+
+#page4 .serrat:hover img {
+  opacity: 1;
+  scale: 1;
+}
+
+#page4 .serrat:hover h1 {
+  color: white;
+}
+
+#page4:has(.serrat:hover) .info {
+  -webkit-text-stroke: 2px #b9f70d;
 }
