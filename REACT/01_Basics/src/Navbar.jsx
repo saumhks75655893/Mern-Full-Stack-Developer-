@@ -1,11 +1,15 @@
-function Navbar(props) {
-  console.log(props);
+function Navbar({ data }) {
+  console.log(data);
   return (
     <h1>
-      {" "}
-      Nabar {props.name} {props.age}
+      <Button info={data} />
     </h1>
   );
+}
+
+function Button({ info }) {
+  console.log(info);
+  return <button>{info}</button>;
 }
 
 export default Navbar;

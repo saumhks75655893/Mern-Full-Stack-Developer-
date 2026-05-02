@@ -186,17 +186,35 @@
   }
 }
 
-button {
-  padding: 30px;
-  font-size: 30px;
+
+h1 {
+  font-size: 80px;
   font-weight: 900;
-  border-radius: 5px;
-  border: 0px solid black;
-  background-color: #91cc91;
-  color: black;
-  box-shadow: 5px 5px 2px white;
-  scale: 0.9;
-  transition: all linear 0.5s;
+  margin-bottom: 80px;
+}
+
+p {
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  color: #000;
+  background-color: #12b512;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  box-shadow: 2px 5px 5px #fff;
+  transition: all ease 0.5s;
+  scale: 0.8;
 }
 
 button:active {
