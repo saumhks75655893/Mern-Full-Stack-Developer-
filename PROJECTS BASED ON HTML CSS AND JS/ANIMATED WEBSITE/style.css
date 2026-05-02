@@ -20,10 +20,10 @@ body {
   justify-content: flex-start;
   gap: 35px;
   padding: 30px 120px;
-  height: 150px;
+  height: 190px;
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 45645;
   /* transition: all ease-in 0.5s; */
 }
 
@@ -42,7 +42,7 @@ body {
   background-color: #95c11e;
   width: 25px;
   height: 25px;
-  z-index: 99;
+  z-index: 999999;
   border-radius: 50%;
   position: fixed;
   top: 50%;
@@ -91,6 +91,53 @@ video {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.page1 .arrow {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 3px solid #95c11e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: -2%;
+  transition: all ease 0.5s;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: rotate(0deg) translateY(-90px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(20px);
+    opacity: 0;
+  }
+}
+
+.page1 .arrow:hover {
+  scale: 0.4;
+  background-color: #95c11e;
+}
+
+.page1 .arrow:hover i {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  font-size: 120px;
+
+}
+
+.page1 .arrow i {
+  font-size: 60px;
 }
 
 .page1 h1 {
@@ -438,4 +485,56 @@ video {
 
 #page4:has(.serrat:hover) .info {
   -webkit-text-stroke: 2px #b9f70d;
+}
+
+#footer {
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #12c006e1, #a9c305);
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 200px;
+  transition: all ease 0.5s;
+}
+
+#footer>img {
+  width: 30%;
+  height: 85%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 30px;
+  left: -18px;
+  /* text-align: end; */
+  z-index: 0;
+
+
+}
+
+#footer .footer1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#footer .footer1 img {
+  height: 150px;
+  object-fit: cover;
+}
+
+#footer .footer1 h4 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #000;
+  transition: all ease 0.5s;
+}
+
+#footer .footer1 p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
 }

@@ -67,10 +67,34 @@ h4All.forEach((elem) => {
     elem.style.color = "#fff";
   });
 });
+
+// HOver effect on footer
+var allFooterH4 = document.querySelectorAll("#footer  h4");
+
+allFooterH4.forEach((elem) => {
+  elem.addEventListener("mouseenter", () => {
+    cursor.style.scale = 3;
+    cursor.style.border = "1px solid #fff";
+    cursor.style.backgroundColor = "transparent";
+    elem.style.color = "#fff";
+    cursor.style.position = "fixed";
+    cursor.style.left = "50%";
+    cursor.style.right = "50%";
+    cursor.style.transform = "translate(-50%, -50%)";
+    cursor.style.transition = " all ease 0.3s";
+  });
+
+  elem.addEventListener("mouseleave", () => {
+    cursor.style.scale = 1;
+    cursor.style.border = "0px solid #95c11e";
+    cursor.style.backgroundColor = "#95c11e";
+    elem.style.color = "#000";
+  });
+});
 // scorlling animatin for navbar
 gsap.to("#nav", {
   backgroundColor: "#000",
-  height: "100px",
+  height: "130px",
   duration: "1",
   scrollTrigger: {
     trigger: "#nav",
