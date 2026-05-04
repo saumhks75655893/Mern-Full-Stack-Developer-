@@ -1,0 +1,40 @@
+[ {
+      "title": "Himanshu Kumar",
+      "jobTitle": "Hacker",
+      "imgLink":
+        "https://img.freepik.com/free-photo/confident-young-businessman-suit-standing-with-arms-folded_171337-18616.jpg?semt=ais_hybrid&w=740&q=80",
+      "likeCount": "601k",
+      "commentCount": "12.5k",
+      "shareCount": "10k"
+    },
+
+    {
+      "title": "Meera Rajput",
+      "jobTitle": "Shafe",
+      "imgLink":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLRXo7UCFjArc3MEZhmthzPtkOjIY5aCUMw&s",
+      "likeCount": "1500k",
+      "commentCount": "125k",
+      "shareCount": "170k"
+    },
+
+    {
+      "title": "Radhika Marchant",
+      "jobTitle": "Business Women",
+      "imgLink":
+        "https://static.vecteezy.com/system/resources/thumbnails/052/129/001/small/a-beautiful-young-business-woman-in-a-suit-photo.jpg",
+      "likeCount": "51k",
+      "commentCount": "5k",
+      "shareCount": "15k"
+    },
+
+    {
+      "title": "Mohan Yadav",
+      "jobTitle": "Politician",
+      "imgLink":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdT90VST56Tpisq-SScPH6R67IJXklE52MGQ&s",
+      "likeCount": "600k",
+      "commentCount": "120.5k",
+      "shareCount": "20k"
+    }
+  ]
