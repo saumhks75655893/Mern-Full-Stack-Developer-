@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import Timer from "./components/Timer";
+import Questions from "./components/Questions";
+import Result from "./components/Result";
 
 const App = () => {
+  const [isover, setIsOver] = useState(false);
+  const [score, setScore] = useState(0);
+
   return (
-    <div>
-      <button
-        className="p-4  m-34 text-4xl bg-red-500 rounded-2xl text-white font-bold border-4
-       "
-      >
-        Code
-      </button>
+    <div className="h-screen w-[70vw] content-center ">
+      {!isover ? (
+        <>
+          <Timer setIsOver={setIsOver} />
+          <Questions setIsOver={setIsOver} setScore={setScore} />
+        </>
+      ) : (
+        <Result score={score} />
+      )}
     </div>
   );
 };
