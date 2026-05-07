@@ -11,7 +11,7 @@ const Content = ({ data }) => {
         {data.rating} | {data.reviews} Reviews
       </div>
       {/* Details */}
-      <div className="py-2">
+      <div className="py-2 leading-7 text-sm font-semibold ml-6">
         {data.details.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -19,7 +19,7 @@ const Content = ({ data }) => {
       {/* Offers */}
       <div className="mt-3 text-xs">
         {data.offers.exchangeOffer && (
-          <p className="text-green-500 font-semibold">
+          <p className="text-green-500 font-semibold mb-2">
             {data.offers.exchangeOffer}
           </p>
         )}
