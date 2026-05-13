@@ -15,14 +15,23 @@ body {
   background-color: lightseagreen;
   width: 200px;
   height: 200px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 #box2 {
   background-color: rgb(3, 45, 43);
   width: 200px;
   height: 200px;
-  position: fixed;
+  /* position: fixed;
   x: 0;
-  y: 0;
+  y: 0; */
+}
+
+#box3 {
+  background-color: rgb(5, 67, 174);
+  width: 200px;
+  height: 200px;
+  /* position: fixed;
+  x: 0;
+  y: 0; */
 }

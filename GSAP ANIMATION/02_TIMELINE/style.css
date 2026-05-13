@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+#heading {
+  color: gold;
+}
+
+#navs {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#navs a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#content {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  word-spacing: 20px;
+  text-align: center;
+}
