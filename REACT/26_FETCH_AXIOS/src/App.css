@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 100%;
+  padding: 5px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 10px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  color: blue;
+  font-weight: 600;
+  scale: 0.9;
+  transition: all linear 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: green;
+}
+
+button:active {
+  scale: 1;
+}
+
+.showData {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.data {
+  width: fit-content;
+  background-color: rgb(3, 174, 40);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 15px;
+  gap: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.data .buttons button {
+  width: 50%;
+  height: 40%;
+  background-color: rgb(130, 3, 3);
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.data .buttons .edit {
+  width: 50%;
+  height: 40%;
+  background-color: rgb(3, 82, 255);
+  color: rgb(165, 210, 4);
+}
+
+.data .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  gap: 5px;
+}
+
+.inputData input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+/* .inputData button {
+  width: 150px;
+  align-content: center;
+  scale: 0.9;
+  transition: all linear 0.5s;
+} */
+
+/* 
+.inputData button:hover {
+  background-color: green;
+  color: white;
+}
+
+.inputData button:active {
+  scale: 1;
+} */
