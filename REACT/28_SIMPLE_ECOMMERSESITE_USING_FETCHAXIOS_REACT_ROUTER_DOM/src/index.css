@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  scale: 0.90;
+  transition: linear all 0.2s;
+}
+
+a:hover {
+  color: rgba(0, 0, 255, 0.594);
+  scale: 1;
+}
+
+a:active {
+  scale: 0.95;
+}
