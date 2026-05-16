@@ -14,6 +14,11 @@ body {
   background-color: black;
 }
 
+#string {
+  width: 100%;
+  /* background-color: rgb(142, 22, 22); */
+}
+
 /* svg {
   background-color: red;
 } */
