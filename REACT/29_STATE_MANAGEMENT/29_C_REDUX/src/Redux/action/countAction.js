@@ -1,6 +1,6 @@
-export const increment = (details) => {
+import { INCREMENT } from "../constants/countConstant";
+export const increment = () => {
   return {
-    type: "INCREMENT",
-    payload: details,
+    type: INCREMENT,
   };
 };

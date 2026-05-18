@@ -7,7 +7,7 @@ export const ProductReducer = (state = initialState, action) => {
   if (action.type === "INCREMENT") {
     return {
       ...state,
-      count: Number(state.count) + 1,
+      count: [Number(state.count) + 1],
     };
   } else {
     return state;

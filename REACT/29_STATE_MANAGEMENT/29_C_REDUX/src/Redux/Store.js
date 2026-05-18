@@ -1,6 +1,25 @@
-import { createStore } from "redux";
-import { ProductReducer } from "./Readucer/ProductReducer";
+import { applyMiddleware, compose, createStore } from "redux";
+import { rootReducer } from "./Readucer/index";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-const store = createStore(ProductReducer);
+const persistConfig = {
+  key: "root",
+  storage,
+};
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const store = createStore(
+  persistedReducer,
+  compose(
+    applyMiddleware(),
+
+    window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__(),
+  ),
+);
+
+let persistedStore = persistStore(store);
+
+export { store, persistedStore };

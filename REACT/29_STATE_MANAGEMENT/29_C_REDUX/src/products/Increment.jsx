@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const Increment = () => {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.ProductReducer.count);
+  // console.log(count);
+
+  useEffect(() => {
+    console.log("rerender hua");
+  }, [count]);
   return (
     <div>
       <hr />

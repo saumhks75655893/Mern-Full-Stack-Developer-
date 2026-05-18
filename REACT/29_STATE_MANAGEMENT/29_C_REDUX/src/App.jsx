@@ -7,7 +7,6 @@ import { increment } from "./Redux/action/countAction.js";
 const App = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  console.log(state);
 
   const handleAddToProduct = () => {
     dispatch(
