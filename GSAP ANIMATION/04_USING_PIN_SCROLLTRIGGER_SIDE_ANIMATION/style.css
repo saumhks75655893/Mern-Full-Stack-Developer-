@@ -17,7 +17,7 @@ body {
 #page1 {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.491);
 }
 
 #page2 {
@@ -30,10 +30,11 @@ body {
   font-size: 90vh;
   text-transform: uppercase;
   padding-left: 20px;
+  color: white;
 }
 
 #page3 {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.105);
 }
