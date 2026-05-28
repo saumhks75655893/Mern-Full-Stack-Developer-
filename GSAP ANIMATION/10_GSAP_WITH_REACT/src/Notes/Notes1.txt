@@ -1,0 +1,35 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import React, { useRef } from 'react'
+
+const App = () => {
+
+  const gsapRef = useRef();
+
+  useGSAP(() => {
+    gsap.from(".box", {
+      x: 1000,
+      delay: 0.8,
+      duration: 1,
+    })
+  })
+
+  useGSAP(() => {
+    gsap.to(gsapRef.current, {
+      x: 1069,
+      duration: 2,
+      dalay: 1,
+      rotate: 720,
+      borderRadius: "50%",
+    })
+  })
+  return (
+    <main>
+      <div ref={gsapRef} className="box">
+
+      </div>
+    </main>
+  )
+}
+
+export default App

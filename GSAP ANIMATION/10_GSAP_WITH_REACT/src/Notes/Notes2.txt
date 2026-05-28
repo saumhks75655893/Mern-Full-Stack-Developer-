@@ -1,0 +1,65 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import React, { useRef } from 'react'
+
+const App = () => {
+
+  const containerRef = useRef();
+
+  // // One Way -> containerRef would be used in .box div
+  // useGSAP(() => {
+  //   gsap.from(containerRef.current, {
+  //     scale: 0,
+  //     rotate: -360,
+  //     delay: 1,
+  //     duration: 1,
+  //     ease: "back.inOut",
+  //     opacity: 0,
+  //     borderRadius: "50%"
+
+  //   })
+  // })
+
+  // // Second Way -> containerRef would be used in container 
+  // useGSAP(() => {
+  //   gsap.from(".box", {
+  //     scale: 0,
+  //     rotate: -360,
+  //     delay: 1,
+  //     duration: 1,
+  //     ease: "back.inOut",
+  //     opacity: 0,
+  //     borderRadius: "50%"
+
+  //   })
+  // }, { scope: containerRef })
+
+  // Third Way -> No need to use containerRef just used class Names 
+  useGSAP(() => {
+    gsap.from(".box", {
+      scale: 0,
+      rotate: -360,
+      delay: 1,
+      duration: 1,
+      ease: "back.inOut",
+      opacity: 0,
+      borderRadius: "50%"
+
+    })
+  }, { scope: ".container" })
+
+  return (
+    <main>
+      <div className='container'>
+        <div className="circle"></div>
+        <div className="box"></div>
+      </div>
+      <div className="anotherOne">
+        <div className="circle"></div>
+        <div className="box"></div>
+      </div>
+    </main>
+  )
+}
+
+export default App
