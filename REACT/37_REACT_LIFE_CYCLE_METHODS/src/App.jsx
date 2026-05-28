@@ -5,7 +5,6 @@ const App = () => {
 
   const [count, setCount] = useState(0);
   const [toggal, setToggal] = useState(false);
-  const [value, setValue] = useState('');
   const [obj, setObj] = useState({
     name: "Hks"
   })
@@ -27,7 +26,7 @@ const App = () => {
 
       <br />
       <br />
-      <input value={value} type="text" onChange={(e) => setValue(e.target.value)} />
+      <input value={obj.name} type="text" onChange={(e) => setObj({ ...obj, name: e.target.value })} />
     </div>
   )
 }
