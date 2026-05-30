@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import ReactMemo from './components/ReactMemo';
+import React, { useCallback, useState } from 'react'
+import UseMemo from './components/useMemo/UseMemo'
+import UseCallback from './components/useCallback/UseCallback'
 
 const App = () => {
-
   const [count, setCount] = useState(0);
-  const [toggal, setToggal] = useState(false);
-  const [obj, setObj] = useState({
-    name: "Hks"
-  })
+  const [data, setData] = useState("");
+  console.log("Parent rendering")
 
-  useEffect(() => {
-    console.log("Parent rendering...")
-  })
+  function handleClick() {
+    setData("hks")
+  }
+
+  // const memoizedHandleClick = useCallback(() => {
+  //   return handleClick();
+  // }, []);
+
+  const memoizedHandleClick = useCallback(handleClick, []);
 
   return (
     <div>
-      {/* React Memo */}
-      <ReactMemo props={obj} />
+      {/* Problem in memo HOC */}
+      {/* <UseCallback handleClick={handleClick} />  */}
 
+      {/* Solution of memo HOC */}
+      <UseCallback memoizedHandleClick={memoizedHandleClick} />
 
-      <div>
-        <h1>{count}</h1>
-        <button onClick={() => setCount(count + 1)}>Increment </button>
-      </div>
-
-      <br />
-      <br />
-      <input value={obj.name} type="text" onChange={(e) => setObj({ ...obj, name: e.target.value })} />
+      <button onClick={() => setCount(count + 1)}>Count : {count}</button>
     </div>
   )
 }
