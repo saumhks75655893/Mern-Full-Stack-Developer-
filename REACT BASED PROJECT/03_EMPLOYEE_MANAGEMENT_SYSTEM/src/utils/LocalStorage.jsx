@@ -1,8 +1,15 @@
 const employees = [
   {
     id: 1,
-    emailId: "employee1@example.com",
+    name: "Mohan Sharma",
+    emailId: "mohan123@gmail.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         active: true,
@@ -36,10 +43,18 @@ const employees = [
       }
     ]
   },
+
   {
     id: 2,
-    emailId: "employee2@example.com",
+    name: "Rohit Verma",
+    emailId: "rohit123@gmail.com",
     password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         active: true,
@@ -83,10 +98,18 @@ const employees = [
       }
     ]
   },
+
   {
     id: 3,
-    emailId: "employee3@example.com",
+    name: "Amit Kumar",
+    emailId: "amit123@gmail.com",
     password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
     tasks: [
       {
         active: true,
@@ -140,10 +163,18 @@ const employees = [
       }
     ]
   },
+
   {
     id: 4,
-    emailId: "employee4@example.com",
+    name: "Suresh Yadav",
+    emailId: "suresh123@gmail.com",
     password: "123",
+    taskCount: {
+      active: 3,
+      newTask: 2,
+      completed: 2,
+      failed: 1
+    },
     tasks: [
       {
         active: true,
@@ -207,15 +238,23 @@ const employees = [
       }
     ]
   },
+
   {
     id: 5,
-    emailId: "employee5@example.com",
+    name: "Vikram Singh",
+    emailId: "vikram123@gmail.com",
     password: "123",
+    taskCount: {
+      active: 4,
+      newTask: 2,
+      completed: 2,
+      failed: 1
+    },
     tasks: [
       {
         active: true,
-        newTask: true,
         completed: false,
+        newTask: true,
         failed: false,
         taskTitle: "Server Monitoring",
         taskDescription: "Monitor server performance and uptime.",
@@ -224,8 +263,8 @@ const employees = [
       },
       {
         active: false,
-        newTask: false,
         completed: true,
+        newTask: false,
         failed: false,
         taskTitle: "Deploy Application",
         taskDescription: "Deploy latest release to production.",
@@ -234,8 +273,8 @@ const employees = [
       },
       {
         active: true,
-        newTask: false,
         completed: false,
+        newTask: false,
         failed: false,
         taskTitle: "Backup Database",
         taskDescription: "Create weekly database backup.",
@@ -286,11 +325,14 @@ const employees = [
   }
 ];
 
+export default employees;
+
 const admin = [
   {
     id: 100,
     emailId: "admin@example.com",
-    password: "123"
+    password: "123",
+    name: "Admin",
   }
 ];
 

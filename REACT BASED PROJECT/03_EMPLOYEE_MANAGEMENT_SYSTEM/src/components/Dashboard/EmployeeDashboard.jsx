@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../others/Header'
 import TaskListAnalytics from '../others/TaskListAnalytics'
 import TaskList from '../TaskList/TaskList'
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = ({ data }) => {
+
   return (
     <div>
       <div className=' p-5 bg-[#1C1C1C] h-screen'>
-        <Header />
-        <TaskListAnalytics />
-        <TaskList />
+        <Header data={data} />
+        <TaskListAnalytics data={data} />
+        <TaskList data={data} />
       </div>
     </div>
   )

@@ -30,7 +30,7 @@ const Login = ({ handleLogin }) => {
         <form onSubmit={(e) => handleSubmit(e)} className='flex flex-col justify-center gap-3 '>
           <input required value={formData.email} name='email' type="email" placeholder='Enter Email ' className='px-5 py-2 border-2 border-emerald-400 rounded-full bg-transparent hover:border-emerald-500 outline-none text-white placeholder:text-gray-400' onChange={(e) => formValues(e)} />
           <input required value={formData.password} name='password' type="password" placeholder='Enter Password' className='px-5 py-2 border-2 border-emerald-400 rounded-full bg-transparent hover:border-emerald-500 outline-none text-white placeholder:text-gray-400' onChange={(e) => formValues(e)} />
-          <button className='px-5 py-2 border-2 border-emerald-400 rounded-full bg-emerald-400 hover:bg-emerald-500 outline-none text-white mt-9 font-bold'>Log in</button>
+          <button className='px-5 py-2 border-2 border-emerald-400 rounded-full bg-emerald-400 hover:bg-emerald-500 outline-none text-white mt-9 font-bold' onClick={() => window.location.reload()}>Log in</button>
         </form>
       </div>
 
