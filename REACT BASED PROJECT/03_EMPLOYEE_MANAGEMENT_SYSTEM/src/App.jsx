@@ -46,7 +46,7 @@ const App = () => {
     }
   }
   return (
-    <div className='mb-5  '>
+    <div className='mb-5   overflow-x-hidden'>
       {!user ? <Login handleLogin={handleLogin} /> : ""}
       {user === 'admin' ? <AdminDashboard /> : ""}
       {user === 'employee' ? <EmployeeDashboard /> : ""}
