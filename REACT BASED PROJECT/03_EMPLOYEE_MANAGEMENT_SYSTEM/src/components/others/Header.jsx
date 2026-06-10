@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Header = ({ data }) => {
+const Header = ({ data, changeUser }) => {
 
 
   const logOutUser = () => {
     localStorage.setItem("loggedInUser", "")
-    window.location.reload();
+    // window.location.reload();
+
+    changeUser("")
   }
   return (
     <div className='flex items-end justify-between'>

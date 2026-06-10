@@ -12,7 +12,7 @@ const App = () => {
   const [loggedInUserData, setLoggedInUserData] = useState(null)
 
 
-  const authData = useContext(AuthContext);
+  const [userData, setUserData] = useContext(AuthContext);
 
   useEffect(() => {
     setLocalStorage();
@@ -35,8 +35,8 @@ const App = () => {
 
   function handleLogin(email, password) {
 
-    if (authData) {
-      const admin = authData?.admin?.find((e) => email === e.emailId && e.password === password);
+    if (userData) {
+      const admin = userData?.admin?.find((e) => email === e.emailId && e.password === password);
 
       if (admin) {
         setUser('admin')
@@ -45,8 +45,8 @@ const App = () => {
       }
 
 
-    } if (authData) {
-      const employee = authData?.employees?.find((e) => email === e.emailId && e.password === password);
+    } if (userData) {
+      const employee = userData?.employees?.find((e) => email === e.emailId && e.password === password);
 
       if (employee) {
         setUser('employee');
@@ -62,8 +62,8 @@ const App = () => {
   return (
     <div className='mb-5   overflow-x-hidden'>
       {!user ? <Login handleLogin={handleLogin} /> : ""}
-      {user === 'admin' ? <AdminDashboard data={loggedInUserData} /> : ""}
-      {user === 'employee' ? <EmployeeDashboard data={loggedInUserData} /> : ""}
+      {user === 'admin' ? <AdminDashboard changeUser={setUser} data={loggedInUserData} /> : ""}
+      {user === 'employee' ? <EmployeeDashboard changeUser={setUser} data={loggedInUserData} /> : ""}
     </div>
   )
 }
