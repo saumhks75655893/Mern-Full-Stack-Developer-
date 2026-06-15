@@ -1,0 +1,14 @@
+.alpha {
+  width: 90%;
+  /* height: 50px; */
+  background-color: teal;
+  color: white;
+  padding: 20px 20px;
+
+}
+
+.bita {
+  border-radius: 50%;
+  box-shadow: 6px 0px 10px teal;
+  background-color: rgb(103, 9, 9);
+}

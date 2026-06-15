@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height:70vh;
+    /* overflow: hidden; */
+    /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100vw;
+    /* max-height: 50vh; */
+    margin: 10% 25%;
+    /* border: 0.2vw solid black; */
+    box-sizing: border-box;
+
+}
+
+.image {
+    max-width: 50vw;
+    max-height: auto;
+    display: block;
+}
+
+.click-button {
+    width: 50vw;
+    max-height: 15vh;
+    padding: 0.10vw;
+    background-image: linear-gradient(to right, rgb(255, 213, 2), rgb(97, 234, 18));
+    color: white;
+    border: none;
+    font-size: 4vw;
+    /* cursor: pointer; */
+    /* box-sizing: border-box; */
+    border: 0.1vw solid black;
+    display: block;
+
+}

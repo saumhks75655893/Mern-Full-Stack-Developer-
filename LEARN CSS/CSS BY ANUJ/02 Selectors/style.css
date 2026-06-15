@@ -1,0 +1,54 @@
+/* universal selector */
+*{
+    padding: 2px;
+    margin: 2px;
+}
+/* element selector */
+body{
+    font-style: oblique;
+}
+h1{
+    color: blue;
+    background-color: aliceblue;
+    padding-left: 40%;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+/* id selector */
+#first{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    font-size: 25px;
+}
+
+/* class selector */
+.purple{
+    color: purple !important;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.highlight
+{
+    background-color: yellow;
+    font-style: italic;
+}
+.highlight1{
+    background-color: red;
+}
+/* grouping selector */
+/* #first, #second{
+    background-color: greenyellow;
+} */
+/* nested selector */
+/* 
+#first>p{
+    background-color: black;
+} */
+
+/* sudo selector */
+/* p:hover{
+    font-family: 'Times New Roman', Times, serif;
+} */
