@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+a:hover {
+  color: black;
+}
+
+.page {
+  background-color: black;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}

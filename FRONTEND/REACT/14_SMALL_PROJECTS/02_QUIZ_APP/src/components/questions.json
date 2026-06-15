@@ -1,0 +1,23 @@
+[
+  {
+    "question": "Which language is primarily used for styling web pages?",
+    "options": ["HTML", "CSS", "JavaScript", "Python"],
+    "answer": "CSS"
+  },
+  {
+    "question": "Which JavaScript framework is maintained by Facebook?",
+    "options": ["Angular", "Vue", "React", "Svelte"],
+    "answer": "React"
+  },
+  {
+    "question": "What does REST stand for?",
+    "options": [
+      "Representational State Transfer",
+      "Remote Execution State Transfer",
+      "Random State Transfer",
+      "Representational Syntax Transfer"
+    ],
+    "answer": "Representational State Transfer"
+  }
+
+]

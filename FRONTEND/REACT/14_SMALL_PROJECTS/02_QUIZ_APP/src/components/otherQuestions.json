@@ -1,0 +1,92 @@
+[
+    {
+    "question": "Which HTTP method is idempotent?",
+    "options": ["POST", "PATCH", "GET", "CONNECT"],
+    "answer": "GET"
+  },
+  {
+    "question": "Which status code represents 'Not Found'?",
+    "options": ["200", "301", "404", "500"],
+    "answer": "404"
+  },
+  {
+    "question": "Which database is a NoSQL database commonly used in full stack apps?",
+    "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+    "answer": "MongoDB"
+  },
+  {
+    "question": "Which of the following is used for server-side JavaScript?",
+    "options": ["Node.js", "React", "Bootstrap", "jQuery"],
+    "answer": "Node.js"
+  },
+  {
+    "question": "What is the purpose of middleware in Express.js?",
+    "options": [
+      "To style HTML pages",
+      "To handle HTTP requests and responses",
+      "To connect to database only",
+      "To compile JavaScript"
+    ],
+    "answer": "To handle HTTP requests and responses"
+  },
+  {
+    "question": "Which tool is used for version control?",
+    "options": ["Docker", "Git", "Nginx", "Webpack"],
+    "answer": "Git"
+  },
+  {
+    "question": "Which HTML tag is used to define a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which CSS property is used to make a layout responsive?",
+    "options": ["float", "display", "media queries", "z-index"],
+    "answer": "media queries"
+  },
+  {
+    "question": "Which of the following is a package manager for JavaScript?",
+    "options": ["pip", "npm", "composer", "gem"],
+    "answer": "npm"
+  },
+  {
+    "question": "Which HTTP method is used to update a resource completely?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": "PUT"
+  },
+  {
+    "question": "Which concept allows components to have their own state in React?",
+    "options": ["Props", "Hooks", "Redux", "Context"],
+    "answer": "Hooks"
+  },
+  {
+    "question": "Which protocol is used for secure communication over the web?",
+    "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
+    "answer": "HTTPS"
+  },
+  {
+    "question": "Which tool is commonly used for containerization?",
+    "options": ["Git", "Docker", "Jenkins", "Babel"],
+    "answer": "Docker"
+  },
+  {
+    "question": "Which backend framework is built on Node.js?",
+    "options": ["Django", "Flask", "Express", "Laravel"],
+    "answer": "Express"
+  },
+  {
+    "question": "What is the default port for HTTPS?",
+    "options": ["80", "21", "443", "3000"],
+    "answer": "443"
+  },
+  {
+    "question": "Which JavaScript method is used to make API calls?",
+    "options": ["fetch()", "map()", "filter()", "reduce()"],
+    "answer": "fetch()"
+  },
+  {
+    "question": "Which architecture separates frontend and backend using APIs?",
+    "options": ["Monolithic", "MVC", "Microservices", "Client-Server"],
+    "answer": "Client-Server"
+  }
+]

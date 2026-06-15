@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  transition: linear all 0.2s;
+}
