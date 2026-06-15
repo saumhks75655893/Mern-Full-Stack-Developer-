@@ -1,0 +1,27 @@
+import React from 'react'
+import withCardLook from './HOC/withCardLook'
+import Alpha from "./components/Alpha"
+import Beta from "./components/Beta"
+import withBorder from './HOC/withBorder'
+
+const App = () => {
+
+  const WithCardLookAlpha = withCardLook(Alpha);
+  const WithCardLookBeta = withCardLook(Beta)
+
+  const AlphaWithBorder = withBorder(Alpha);
+  const BetaWithBorder = withBorder(Beta)
+
+  return (
+    <div>
+      <WithCardLookAlpha props="Siya Ram" />
+      <WithCardLookBeta />
+
+      {/* <AlphaWithBorder /> */}
+      {/* <BetaWithBorder /> */}
+
+    </div>
+  )
+}
+
+export default App

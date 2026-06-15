@@ -1,0 +1,33 @@
+button {
+  scale: 1;
+  transition: all ease 0.5s;
+}
+
+button:active {
+
+  scale: 0.99;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+.result {
+  font-size: 65px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 50px;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: rgba(0, 0, 0, 0.484);
+}

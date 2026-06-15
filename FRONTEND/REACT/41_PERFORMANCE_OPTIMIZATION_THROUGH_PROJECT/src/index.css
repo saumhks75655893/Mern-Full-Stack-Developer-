@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.hero {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
+    url("https://www.mamp.one/wp-content/uploads/2024/09/image-resources2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.hero button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(lime, green);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: linear-gradient(green, lime);
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 70px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(183, 159, 159, 0.1);
+  transition: 0.3s;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsbmTZu_uMrmJ0z--CrG-o1UIXytu1OCizQ&s");
+  background-size: cover;
+  background-position: center;
+}
+
+.card1 {
+  background: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 340px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(183, 159, 159, 0.1);
+  transition: 0.3s;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6bd5SI86ox6SVU1z-MUHJUXuMdaYSIWlsw&s");
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
