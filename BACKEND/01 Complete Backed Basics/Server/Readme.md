@@ -1,0 +1,14 @@
+user_name -> himanshukumar893384_db_user
+password -> SRZK5itzcjgSZDEz
+
+connection url -> mongodb+srv://himanshukumar893384_db_user:SRZK5itzcjgSZDEz@myclurtor1.qxtkq58.mongodb.net/
+
+
+New user-name and passwords : -----------
+
+anshukumar75655893_db_user
+G8uObnc3ncvQt7Gu
+
+G8uObnc3ncvQt7Gu
+
+mongodb+srv://anshukumar75655893_db_user:G8uObnc3ncvQt7Gu@learning-mongo-bd.hwpt0xh.mongodb.net/
