@@ -1,0 +1,21 @@
+{
+  "editor.wordWrap": "bounded",
+  "chat.editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "php.format.rules.chainedMethodCallsSemicolonOnNewLine": true,
+  "pdf-preview.default.scrollMode": "wrapped",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFoldingRangeProvider": "ms-python.autopep8",
+  "rewrap.wrappingColumn": 80,
+  "rewrap.autoWrap.enabled": true,
+  "php.format.rules.declParametersWrap": "onEveryItem",
+  "html.format.wrapLineLength": 80,
+  "workbench.editor.wrapTabs": true,
+  "editor.wrappingStrategy": "advanced",
+  "editor.wrappingIndent": "same",
+  "editor.wrapOnEscapedLineFeeds": true,
+  "editor.wordWrapColumn": 80,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true
+}
