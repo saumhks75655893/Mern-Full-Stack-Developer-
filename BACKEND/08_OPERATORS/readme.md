@@ -1,0 +1,1 @@
+for practice i've used -> dummyjson's product json file you can go through that. 
